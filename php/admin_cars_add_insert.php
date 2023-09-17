@@ -17,9 +17,11 @@ Vechicle_Name='$vcl_nme',  Vechicle_Category='$vch_catg',  Vechicle_Price='$vchl
 $quz_id=mysqli_query($conn,$ad_quz);
 ?>
 <div class="modal-body">
-<p	style="font-size:50px; font-weight:bold; color:#e70b3e; text-align:center;">YOUR FORM IS SUCESSFUL SUBMITTED</p>
-<center><img src="image/sussfull.png"></center>
+    <p style="font-size:50px; font-weight:bold; color:#e70b3e; text-align:center;">YOUR FORM IS SUCESSFUL SUBMITTED</p>
+    <center><img src="image/sussfull.png"></center>
 </div>
 <div class="modal-footer">
-<center><a href="car_dashboard.php" class="btn btn-primary" style="width: 100%;  height: 100px;font-weight: bold;font-size: 50px;" target="_blank">VIWS CARS DASHBOARD</a></center>
+    <center><a href="car_dashboard.php" class="btn btn-primary"
+            style="width: 100%;  height: 100px;font-weight: bold;font-size: 50px;" target="_blank">VIWS CARS
+            DASHBOARD</a></center>
 </div>

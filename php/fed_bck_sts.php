@@ -12,6 +12,7 @@ $quz_id=mysqli_query($conn,$ad_quz);
 ?>
 
 <div class="modal-body">
-<p	style="font-size:	50px;font-weight:	bold;color:	#e70b3e;text-align:  center;">THANK YOU <br>YOUR FEEDBACK IS SUCESSFUL SUBMITTED</p>
-<center><img src="image/success.png"></center>
+    <p style="font-size:	50px;font-weight:	bold;color:	#e70b3e;text-align:  center;">THANK YOU <br>YOUR FEEDBACK IS
+        SUCESSFUL SUBMITTED</p>
+    <center><img src="image/success.png"></center>
 </div>

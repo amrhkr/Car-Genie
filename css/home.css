@@ -1,5 +1,6 @@
+
 body{
-    background-color: #999;
+    background-color: #bdbcbc;
     background-size: cover;  font-family: sans-serif;
     }
     .top{
@@ -259,7 +260,6 @@ color: #fff;
 {
 color: #fff;
 opacity: 1;
-}
 width: 100px;
 height: 30px;
 background-color: #33ff00;
@@ -640,4 +640,14 @@ background-color: #33ff00;
 text-align: center;
 width: 300px;
 height: 400px;
+}
+
+#middleIt{
+    text-align: center;
+    line-height: 3.8;
+}
+
+#adminName{
+    font-size: large;
+    text-shadow: 2px 2px 2px red;
 }
