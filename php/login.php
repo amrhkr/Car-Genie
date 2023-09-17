@@ -58,38 +58,48 @@
                 <center>
 
                     <form name="login" method="post" action="login_select.php">
-                        <h1>Login here</h1>
-                        <h4>User ID : &nbsp; <input type="text" name="user"
+                        <!-- <h1>Login here</h1>
+                        <h4>User ID : <input type="text" name="user"
                                 placeholder="User id"></h4>
                         <h4>Password : <input type="password" name="pass"
                                 placeholder="Password"></h4>
                         <input type="submit" value="Log In"
                             onclick="alert('Login successfull')">
                         <input type="submit" value="Reset"><br><br>
-                        <a href="Registration.php">Click here To New User</a>
+                        <a href="Registration.php">Click here To New User</a> -->
+                        <fieldset>
+            <legend>Login</legend>
+            <label for="Name">User ID:</label>
+            <input type="text" name="cus_email" id="Name" required>
+
+            <label for="Password">Password:</label>
+            <input type="password" name="cus_pwd" id="Password" required>
+            <br/>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </fieldset>
                     </form>
                 </center>
             </div>
             <div class="footer">
                 <div class="foot_top">
                     <div class="footer2">
-                        <input type='text' name='t1' placeholder='Name'><br>
-                        <input type='text' name='t1' placeholder='Email'><br>
-                        <input type='text' name='t1' placeholder='Telephone'><br>
-                        <input type='text' name='t1' placeholder='Comment'><br>
-                        <input type='submit' value='submit'></div>
+                        <input type='text' name='commenterName' placeholder='Name'><br>
+                        <input type='text' name='commenterEmail' placeholder='Email'><br>
+                        <input type='text' name='commenterPhone' placeholder='Telephone'><br>
+                        <input type='text' name='comment' placeholder='Comment'><br>
+                        <input type='submit' value='Submit' />
+                    </div>
                     <div class="Address">
                         <h3>Address</h3>
-                        <h5>Kartar Nagar<br>3-1/2 Pusta<br> Delhi Pin code :
-                            110053</h5>
+                        <h5>Kartar Nagar<br>3-1/2 Pusta<br> Delhi Pin code : 110053</h5>
                     </div>
-
                 </div>
-                <a href="home.php">HOME</a>
+                <a href="index.php">HOME</a>
                 <a href="about.php">About Us</a>
                 <a href="contact.php">CONTACT US</a>
                 <a href="login.php">PROFILE</a>
             </div>
-            <h4 id="middleIt">2023 CAR GENIE | All Rights Reserved | Design by <span id="adminName">Amar Choudhary</span></h4>
+            <h4 id="middleIt">	&copy; 2023 CAR GENIE | All Rights Reserved | Design by <span id="adminName">Amar Choudhary</span></h4>
         </body>
     </html>

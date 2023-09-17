@@ -69,51 +69,36 @@
         <h1>WHAT'S POPULAR IN CARS</h1>
     </center>
     <div class="image">
+        
         <img src="../image/cars/infinity.jpg" style=" width: 49%; float: left; height: 500px; margin-left:  10px;">
         <img src="../image/cars/nissan3.jpg" style=" width: 49%; float: right; height: 500px; margin-right:  10px; ">
 
-        <h3>Performance cars aren't all about engine noise, exhaust fumes,
+        <h3 class="description">Performance cars aren't all about engine noise, exhaust fumes,
             and squealing tires.
         </h3>
-        <h3> Engine Tweaks Pump Up Horsepower </h3>
+        <h3 class="description"> Engine Tweaks Pump Up Horsepower </h3>
     </div>
 
     <div class="footer">
-        <div class="foot_top">
-            <div class="footer2">
-                <table>
-                    <tr>
-                        <td><input type='text' name='t1' placeholder='Name'></td>
-                    </tr>
-                    <tr>
-                        <td><input type='text' name='t1' placeholder='Email'></td>
-                    </tr>
-                    <tr>
-                        <td><input type='text' name='t1' placeholder='Telephone'></td>
-                    </tr>
-                    <tr>
-                        <td><input type='text' name='t1' placeholder='Comment'></td>
-                    </tr>
-                    <tr>
-                        <td><input type='submit' value='submit'></td>
-                    </tr>
-                </table>
-                
+                <div class="foot_top">
+                    <div class="footer2">
+                        <input type='text' name='commenterName' placeholder='Name'><br>
+                        <input type='text' name='commenterEmail' placeholder='Email'><br>
+                        <input type='text' name='commenterPhone' placeholder='Telephone'><br>
+                        <input type='text' name='comment' placeholder='Comment'><br>
+                        <input type='submit' value='Submit' />
+                    </div>
+                    <div class="Address">
+                        <h3>Address</h3>
+                        <h5>Kartar Nagar<br>3-1/2 Pusta<br> Delhi Pin code : 110053</h5>
+                    </div>
+                </div>
+                <a href="home.php">HOME</a>
+                <a href="about.php">About Us</a>
+                <a href="contact.php">CONTACT US</a>
+                <a href="login.php">PROFILE</a>
             </div>
-            <div class="Address">
-                <h3>Address</h3>
-                <h5>Kartar Nagar<br>3-1/2 Pusta<br> Delhi Pincode : 110053</h5>
-            </div>
-        </div>
-        <div>
-            <a href="index.php">HOME</a>
-            <a href="about.php">ABOUT US</a>
-            <a href="contact.php">CONTACT US</a>
-            <a href="login.php">PROFILE</a>
-            
-        </div>
-        </div>
-        <h4 id="middleIt">2023 CAR GENIE | All Rights Reserved | Design by <span id="adminName">Amar Choudhary</span></h4>
+        <h4 id="middleIt">	&copy; 2023 CAR GENIE | All Rights Reserved | Design by <span id="adminName">Amar Choudhary</span></h4>
 </body>
 
 </html>

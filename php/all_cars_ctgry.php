@@ -39,7 +39,7 @@
 
     <div id="menu">
         <a href="index.php">Home</a>
-        <a href="about us.php">About Us</a>
+        <a href="about.php">About Us</a>
         <a href="#" onclick="alert('Please Login First...!!!')">All CARS</a>
         <select onclick="alert('Please Login First...!!!')">
             <option>Cars Category</option>
@@ -111,26 +111,25 @@
 
 
     <div class="footer">
-        <div class="foot_top">
-            <div class="footer2">
-                <input type='text' name='t1' placeholder='Name'><br>
-                <input type='text' name='t1' placeholder='Email'><br>
-                <input type='text' name='t1' placeholder='Telephone'><br>
-                <input type='text' name='t1' placeholder='Comment'><br>
-                <input type='submit' value='submit'>
+                <div class="foot_top">
+                    <div class="footer2">
+                        <input type='text' name='commenterName' placeholder='Name'><br>
+                        <input type='text' name='commenterEmail' placeholder='Email'><br>
+                        <input type='text' name='commenterPhone' placeholder='Telephone'><br>
+                        <input type='text' name='comment' placeholder='Comment'><br>
+                        <input type='submit' value='Submit' />
+                    </div>
+                    <div class="Address">
+                        <h3>Address</h3>
+                        <h5>Kartar Nagar<br>3-1/2 Pusta<br> Delhi Pin code : 110053</h5>
+                    </div>
+                </div>
+                <a href="home.php">HOME</a>
+                <a href="about.php">ABOUT US</a>
+                <a href="contact.php">CONTACT US</a>
+                <a href="login.php">PROFILE</a>
             </div>
-            <div class="Address">
-                <h3>Address</h3>
-                <h5>Kartar Nagar<br>3-1/2 Pusta<br> Delhi Pin code : 110053</h5>
-            </div>
-
-        </div>
-        <a href="home.jsp">HOME</a>
-        <a href="About Us.html">AboutUs</a>
-        <a href="Contact.html">CONTACT US</a>
-        <a href="login.html">PROFILE</a>
-    </div>
-    <h4 id="middleIt">2023 CAR GENIE | All Rights Reserved | Design by <span id="adminName">Amar Choudhary</span></h4>
+    <h4 id="middleIt">	&copy; 2023 CAR GENIE | All Rights Reserved | Design by <span id="adminName">Amar Choudhary</span></h4>
 </body>
 
 </html>

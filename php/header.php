@@ -17,9 +17,8 @@
     </div>
     
     <div class="logo">
-        <div class="left">
-            <h1><img src="../image/logo.jpg" width="40px" height="50px" />CAR
-                GENIE</h1>
+        <div class="left deco">
+        <h1><a href="index.php"><img src="../image/logo.jpg" width="40px" height="50px" />CAR GENIE</a></h1>
         </div>
         <div class="right">
             <p><img src="../image/phone.svg" width="26px" height="36px">

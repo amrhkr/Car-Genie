@@ -54,58 +54,35 @@
 
         <div class="frame1">
             <form action="reg_insert.php" method="post">
-                <table cellpadding="2" width="30%" height="500px" align="center"
-                    cellspacing="2">
-                    <tr>
-                        <td colspan="2">
-                            <center><font size="36px"><b>Registration</b></font></center>
-                        </td>
-                    </tr>
+            <fieldset>
+            <legend>Registration</legend>
+            <label for="Name">Name:</label>
+            <input type="text" name="cus_nme" id="Name" required>
 
-                    <tr>
-                        <td> Name :</td>
-                        <td><input type="text" name="cus_nme" id="Name"
-                                size="30"></td>
-                        <tr>
-                            <td>Password:</td>
-                            <td><input type="password" name="cus_pwd"
-                                    id="password" size="30"></td>
-                        </tr>
-                        <td>Email :</td>
-                        <td><input type="text" name="cus_emil" id="Email"
-                                size="30"></td>
-                    </tr>
-                    <tr>
-                        <td>Address :</td>
-                        <td><input type="text" name="cus_addr"></td>
-                    </tr>
-                    <tr>
-                        <tr>
-                            <td>City </td>
-                            <td><input type="text" name="cus_city" id="cus_city"
-                                    size="30"></td>
-                        </tr>
-                        <tr>
-                            <td>State: </td>
-                            <td><input type="text" name="cus_stae" id="stt"
-                                    size="30"></td>
-                        </tr>
-                        <tr>
-                            <td>Gender</td>
-                            <td><input type="text" name="cus_sex" id="cus_sex"
-                                    size="30"></td>
-                        </tr>
-                        <tr>
-                            <td>Mobile no: </td>
-                            <td><input type="text" name="cus_mbl" id="Mobileno"
-                                    size="30"></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td colspan="2"><input type="reset">
-                                <input type="submit" value="submit form" /></td>
-                        </tr>
-                    </table>
+            <label for="Password">Password:</label>
+            <input type="password" name="cus_pwd" id="Password" required>
+
+            <label for="Email">Email:</label>
+            <input type="email" name="cus_emil" id="Email" required>
+
+            <label for="Address">Address:</label>
+            <input type="text" name="cus_addr" id="Address">
+
+            <label for="City">City:</label>
+            <input type="text" name="cus_city" id="City">
+
+            <label for="State">State:</label>
+            <input type="text" name="cus_stae" id="State">
+
+            <label for="Gender">Gender:</label>
+            <input type="text" name="cus_sex" id="Gender">
+
+            <label for="MobileNo">Mobile No:</label>
+            <input type="text" name="cus_mbl" id="MobileNo">
+            <br/>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </fieldset>
                 </form>
             </div>
         </div>
@@ -113,11 +90,11 @@
             <div class="footer">
                 <div class="foot_top">
                     <div class="footer2">
-                        <input type='text' name='t1' placeholder='Name'><br>
-                        <input type='text' name='t1' placeholder='Email'><br>
-                        <input type='text' name='t1' placeholder='Telephone'><br>
-                        <input type='text' name='t1' placeholder='Comment'><br>
-                        <input type='submit' value='submit'>
+                        <input type='text' name='commenterName' placeholder='Name'><br>
+                        <input type='text' name='commenterEmail' placeholder='Email'><br>
+                        <input type='text' name='commenterPhone' placeholder='Telephone'><br>
+                        <input type='text' name='comment' placeholder='Comment'><br>
+                        <input type='submit' value='Submit' />
                     </div>
                     <div class="Address">
                         <h3>Address</h3>
@@ -129,7 +106,7 @@
                 <a href="contact.php">CONTACT US</a>
                 <a href="login.php">PROFILE</a>
             </div>
-            <h4 id="middleIt">2023 CAR GENIE | All Rights Reserved | Design by <span id="adminName">Amar Choudhary</span></h4>
+            <h4 id="middleIt">	&copy; 2023 CAR GENIE | All Rights Reserved | Design by <span id="adminName">Amar Choudhary</span></h4>
         </div>
     </body>
 </html>

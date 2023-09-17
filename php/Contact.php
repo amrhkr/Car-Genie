@@ -22,10 +22,10 @@
 
     <div class="logo">
         <div class="left">
-            <h1><img src="image/logo.jpg" width="40px" height="35px" />CAR GENIE</h1>
+            <h1><img src="../image/logo.jpg" width="40px" height="35px" />CAR GENIE</h1>
         </div>
         <div class="right">
-            <p><img src="image/phone.png" width="16px" height="16px/"> Order or call us
+            <p><img src="../image/phone.svg" width="16px" height="16px/"> Order or call us
                 :(+91)9968853896</p>
         </div>
     </div>
@@ -79,12 +79,11 @@
         </div>
         <a href="index.php">HOME</a>
         <a href="about.php">ABOUT US</a>
-
         <a href="contact.php">CONTACT US</a>
         <a href="login.php">PROFILE</a>
-        <h4>2023 CAR GENIE | All rights reserved | Design by Amar Choudhary</h4>
-
-    </div>
+        </div>
+        <h4 id="middleIt">	&copy; 2023 CAR GENIE | All Rights Reserved | Design by <span id="adminName">Amar Choudhary</span></h4>
+    
 </body>
 
 </html>

@@ -68,18 +68,18 @@ Search From Variety Of Used Car And Brand With Easy Finance & RC Transfer. Find 
         </center>
         <div class="image">
             <img
-                src="image/audi.jpg"
+                src="../image/cars/audi.jpg"
                 style="width: 49%; float: left; height: 500px; margin-left: 10px" />
             <img
-                src="image/bmw.jpg"
+                src="../image/cars/bmw.jpg"
                 style="width: 49%; float: right; height: 500px; margin-right: 10px" />
 
-            <h3>
+            <h3 class="description">
                 Performance cars aren't all about engine noise, exhaust fumes,
                 and
                 squealing tires.
             </h3>
-            <h3>Engine Tweaks Pump Up Horsepower</h3>
+            <h3 class="description">Engine Tweaks Pump Up Horsepower</h3>
         </div>
 
         <div class="footer">
@@ -103,10 +103,8 @@ Search From Variety Of Used Car And Brand With Easy Finance & RC Transfer. Find 
             <a href="about.php">ABOUT US</a>
             <a href="contact.php">CONTACT US</a>
             <a href="login.php">PROFILE</a>
-            <h4 id="middleIt">
-                2023 CAR GENIE | All rights reserved | Design by
-                <span id="adminName">Amar Choudhary</span>
-            </h4>
+            
         </div>
+        <h4 id="middleIt">	&copy; 2023 CAR GENIE | All Rights Reserved | Design by <span id="adminName">Amar Choudhary</span></h4>
     </body>
 </html>
