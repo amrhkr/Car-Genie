@@ -70,7 +70,7 @@
     </center>
     <div class="image">
         <img src="../image/cars/infinity.jpg" style=" width: 49%; float: left; height: 500px; margin-left:  10px;">
-        <img src="../image/cars/nissan2.jpg" style=" width: 49%; float: right; height: 500px; margin-right:  10px; ">
+        <img src="../image/cars/nissan3.jpg" style=" width: 49%; float: right; height: 500px; margin-right:  10px; ">
 
         <h3>Performance cars aren't all about engine noise, exhaust fumes,
             and squealing tires.
@@ -81,11 +81,24 @@
     <div class="footer">
         <div class="foot_top">
             <div class="footer2">
-                <input type='text' name='t1' placeholder='Name'><br>
-                <input type='text' name='t1' placeholder='Email'><br>
-                <input type='text' name='t1' placeholder='Telephone'><br>
-                <input type='text' name='t1' placeholder='Comment'><br>
-                <input type='submit' value='submit'>
+                <table>
+                    <tr>
+                        <td><input type='text' name='t1' placeholder='Name'></td>
+                    </tr>
+                    <tr>
+                        <td><input type='text' name='t1' placeholder='Email'></td>
+                    </tr>
+                    <tr>
+                        <td><input type='text' name='t1' placeholder='Telephone'></td>
+                    </tr>
+                    <tr>
+                        <td><input type='text' name='t1' placeholder='Comment'></td>
+                    </tr>
+                    <tr>
+                        <td><input type='submit' value='submit'></td>
+                    </tr>
+                </table>
+                
             </div>
             <div class="Address">
                 <h3>Address</h3>
@@ -97,9 +110,10 @@
             <a href="about.php">ABOUT US</a>
             <a href="contact.php">CONTACT US</a>
             <a href="login.php">PROFILE</a>
-            <h4>2023 Car Genie | All rights reserved | Design by <span id="adminName">Amar Choudhary</span></h4>
+            
         </div>
-
+        </div>
+        <h4 id="middleIt">2023 CAR GENIE | All Rights Reserved | Design by <span id="adminName">Amar Choudhary</span></h4>
 </body>
 
 </html>

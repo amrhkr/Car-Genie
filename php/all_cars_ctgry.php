@@ -6,10 +6,11 @@
 <head>
     <title>CAR GENIE - All Cars</title>
     <link rel="stylesheet" href="../css/home.css" type="text/css" />
-
+    
 </head>
 
 <body>
+    <h1><?php print_r($_SESSION) ?></h1>
     <div class="top">
         <div class="left">
             <p>SALE UPTO 70% OFF. USE CODE "SALES 70%. SHOP NOW</P>
@@ -17,7 +18,7 @@
         <div class="righth">
             <p style="color:#fff; padding-top: 20px;">Welcome
                 <a href='logout.php'
-                    style="color: #fff; text-decoration: none; fontfamily: sans-serif; word-spacing: 60px; ">LogOut</a>
+                    style="color: #fff; text-decoration: none; font-family: sans-serif; word-spacing: 60px; ">LogOut</a>
 
 
         </div>
@@ -26,11 +27,12 @@
 
     <div class="logo">
         <div class="left">
-            <h1><img src="image/logo.jpg" width="40px" height="35px" />CAR GENIE</h1>
+            <h1><img src="../image/logo.jpg" width="40px" height="50px" />CAR
+                GENIE</h1>
         </div>
         <div class="right">
-            <p><img src="image/phone.png" width="16px" height="16px/"> Order or call us
-                :(+91)9968853896</p>
+            <p><img src="../image/phone.svg" width="26px" height="36px">
+                Order or call us:(+91)9968853896</p>
         </div>
     </div>
 
@@ -58,51 +60,51 @@
 
     <div class="product">
         <div class="block">
-            <img src="image/kia sport.jpg" />
+            <img src="../image/cars/kiasport.jpg"  />
             <h3>2020 Kia Forte GT Sport Car<br> Price:500000<br>Vechile id=V2345
-                <input type='Submit' value="BuyNow" onclick="location.href='pyament.php'">
+                <input type='Submit' value="BuyNow" onclick="location.href='payment.php'">
 
         </div>
         <div class="block">
-            <img src="image/scorpio.jpg" />
+            <img src="../image/cars/scorpio.jpg" />
             <h3> 2020 Scorpio Car<br> Price:200000<br>Vechile id=V2045
-                <input type='Submit' value='BuyNow' onclick="location.href='pyament.php'">
+                <input type='Submit' value='BuyNow' onclick="location.href='payment.php'">
 
         </div>
         <div class="block">
-            <img src="image/kia forte.webp" />
-            <h3>2020 Kia Forte GT Sport Car<br> Price:600000<br>Vechile id=V2046
-                <input type='Submit' value='BuyNow' onclick="location.href='pyament.php'">
+            <img src="../image/cars/ferrari.jpg" />
+            <h3>2023 Ferrari <br> Price:6000000<br>Vechile id=V2046
+                <input type='Submit' value='BuyNow' onclick="location.href='payment.php'">
 
         </div>
         <div class="block">
-            <img src="image/audi.jpg" />
+            <img src="../image/cars/audi.jpg" />
             <h3>2019 Audi A1 Sportback <br> Price:400000<br>Vechile id=V2047
-                <input type='Submit' value='BuyNow' onclick="location.href='pyament.php'">
+                <input type='Submit' value='BuyNow' onclick="location.href='payment.php'">
 
         </div>
         <div class="block">
-            <img src="image/toyota.jpg" />
+            <img src="../image/cars/toyota.jpg" />
             <h3>2019 Toyota Corolla<br> Price:200000<br>Vechile id=V2049
-                <input type='Submit' value='BuyNow' onclick="location.href='pyament.php'">
+                <input type='Submit' value='BuyNow' onclick="location.href='payment.php'">
 
         </div>
         <div class="block">
-            <img src="image/nissan.jpg" />
+            <img src="../image/cars/nissan.jpg" />
             <h3>2019 Nissan<br> Price:300000<br>Vechile id=V2946
-                <input type='Submit' value='BuyNow' onclick="location.href='pyament.php'">
+                <input type='Submit' value='BuyNow' onclick="location.href='payment.php'">
 
         </div>
         <div class="block">
-            <img src="image/bmw.jpg" />
+            <img src="../image/cars/bmw.jpg" />
             <h3>2019 BMW<br> Price:700000<br>Vechile id=V2645
-                <input type='Submit' value='BuyNow' onclick="location.href='pyament.php'">
+                <input type='Submit' value='BuyNow' onclick="location.href='payment.php'">
 
         </div>
         <div class="block">
-            <img src="image/infinity.jpg" />
-            <h3>2019 Infiniti<br> Price:400000<br>Vechile id=V2445
-                <input type='Submit' value='BuyNow' onclick="location.href='pyament.php'">
+            <img src="../image/cars/infinity.jpg" />
+            <h3>2019 Infiniti<br> Price:400000<br/>
+                <input type='Submit' value='BuyNow' onclick="location.href='payment.php'">
 
         </div>
     </div>
@@ -127,9 +129,8 @@
         <a href="About Us.html">AboutUs</a>
         <a href="Contact.html">CONTACT US</a>
         <a href="login.html">PROFILE</a>
-        <h4>2023 CAR GENIE | All rights reserved | Design by Amar Choudhary</h4>
-
     </div>
+    <h4 id="middleIt">2023 CAR GENIE | All Rights Reserved | Design by <span id="adminName">Amar Choudhary</span></h4>
 </body>
 
 </html>

@@ -89,9 +89,7 @@
                 <a href="about.php">About Us</a>
                 <a href="contact.php">CONTACT US</a>
                 <a href="login.php">PROFILE</a>
-                <h4>2023 CAR GENIE | All rights reserved | Design by Amar
-                    Choudhary</h4>
             </div>
-
+            <h4 id="middleIt">2023 CAR GENIE | All Rights Reserved | Design by <span id="adminName">Amar Choudhary</span></h4>
         </body>
     </html>
