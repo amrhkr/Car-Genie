@@ -93,7 +93,7 @@
                         <h5>Kartar Nagar<br>3-1/2 Pusta<br> Delhi Pin code : 110053</h5>
                     </div>
                 </div>
-                <a href="home.php">HOME</a>
+                <a href="index.php">HOME</a>
                 <a href="about.php">About Us</a>
                 <a href="contact.php">CONTACT US</a>
                 <a href="login.php">PROFILE</a>
