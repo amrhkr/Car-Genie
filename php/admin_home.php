@@ -6,8 +6,7 @@ $cur_dt_ymd=date("Y-m-d");
 //Please Do not touch this code End
 ?>
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,16 +18,11 @@ $cur_dt_ymd=date("Y-m-d");
     <!--Dont Movable start-->
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/themify-icons/themify-icons.css" rel="stylesheet" type="text/css" />
-
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> <!--Dont Movable END-->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> 
+    <!--Dont Movable END-->
     <!--------Please Do not touch this code End---------------->
     <script src="../jQuery/jqueryfile.js"></script>
-    <script>
-    $( document ).ready(function() {
-        $("#includeHtml").load("header.php");
-    console.log( "ready!" );
-});
-   </script>
+    
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -42,7 +36,7 @@ $cur_dt_ymd=date("Y-m-d");
             </h5>
         </div>
     </div>
-    <div id="includeHtml"></div>
+    <div id="includeHeader"></div>
     <!-- <div class="logo">
         <div class="left">
             <h1>CAR GENIE</h1>
@@ -59,7 +53,6 @@ $cur_dt_ymd=date("Y-m-d");
             <a href="admin_product.php">Add Cars</a>
             <a href="admin_payment.php">View Payment</a>
             <!-- <a href="Invoice.php">Invoice</a> -->
-
         </center>
     </div>
     <div id="preloader">
@@ -67,7 +60,6 @@ $cur_dt_ymd=date("Y-m-d");
     </div>
     <!-- Site wrapper -->
     <div class="wrapper">
-
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
@@ -78,24 +70,20 @@ $cur_dt_ymd=date("Y-m-d");
                 <div class="header-title">
                     <center>
                         <h1 style="font-weight:900;font-size:35px;color:red">USERS DETAILS</h1>
-
                     </center>
                     <br>
-                    <div class="btn-group" id="buttonlist">
-                    </div>
+                    <div class="btn-group" id="buttonlist"></div>
+                </div>
             </section>
             <!-- Main content -->
             <section class="content">
-                <div class="row">
-                </div>
-
+                <div class="row"></div>
                 <?php
-//Collect Normal Data Code Start
-$clt_dta ="select * from customer where Cus_id!='' ";
+                    //Collect Normal Data Code Start
+                    $clt_dta ="select * from customer where Cus_id!='' ";
+                    $result=$conn->query($clt_dta);
 
-$result=$conn->query($clt_dta);
-
-?>
+                ?>
                 <div class="table-responsive">
                     <table class="table table-bordered table-striped table-hover">
                         <thead>
@@ -109,24 +97,20 @@ $result=$conn->query($clt_dta);
                                     <th>ADDRESS</th>
                                     <th>STATE</th>
                                     <th>MOBILE NUMBER</th>
-
-
                                 </tr>
                         </thead>
                         <tbody>
                             <?php $a=1;
-while ($row = mysqli_fetch_array($result))
-{
-
-$pmt_id=$row['Cus_id'];
-
-$crd_no=$row['Cus_Name'];
-$add=$row['Email_ID'];
-$cus_id=$row['Cus_Pwd'];
-$purch_pric=$row['Cus_Add'];
-$pur_dte=$row['Cus_State'];
-$purch_tme=$row['Cus_Phone'];
-?>
+                                while ($row = mysqli_fetch_array($result)){
+                                    $pmt_id=$row['Cus_id'];
+                                    $crd_no=$row['Cus_Name'];
+                                    $add=$row['Email_ID'];
+                                    $cus_id=$row['Cus_Pwd'];
+                                    $purch_pric=$row['Cus_Add'];
+                                    $pur_dte=$row['Cus_State'];
+                                    $purch_tme=$row['Cus_Phone'];
+                                }
+                            ?>
                             <tr>
                                 <td style="font-weight:900; color: red; font-size : 25px;">
                                     <?php echo $a;?>
@@ -152,52 +136,40 @@ $purch_tme=$row['Cus_Phone'];
                                 <td style="font-weight:900; color: blue; font-size : 25px;">
                                     <?php echo $purch_tme?>
                                 </td>
-                                <?php
-$a++;
-?>
-                                <?php  if($cus_id!='');
-?>
+                                <?php $a ++;?>
+                                <?php  if($cus_id!=''); ?>
                             </tr>
                         </tbody>
                     </table>
-
-                    <!-- Start Core Plugins
-
-================================================================
-=====-->
-                    <!-- jQuery -->
-                    <script src="<?php	echo	$dsh_cs_jq_mn_js?>" type="text/javascript"></script>
-                    <!-- jquery-ui -->
-                    <script src="<?php echo $dsh_jq_mn_js?>" type="text/javascript"></script> <!--  Bootstrap -->
-                    <script src="<?php	echo	$dsh_btstp_mn_js?>" type="text/javascript"></script>
-                    <!-- lobipanel -->
-                    <script src="<?php echo $dsh_lbpnl_js?>" type="text/javascript"></script> <!-- Pace js
--->
-                    <script src="<?php echo $dsh_ps_mn_js?>" type="text/javascript"></script> <!--
-SlimScroll -->
-                    <script src="<?php echo $dsh_slm_scrl?>" type="text/javascript"></script> <!--
-FastClick -->
-                    <script src="<?php echo $dsh_fst_slk_js?>" type="text/javascript"></script> <!--
-CRMadmin frame -->
-                    <script src="<?php echo $dsh_cstm_js?>" type="text/javascript"></script> <!-- End
-Core Plugins
-================================================================
-=====-->
-                    <!-- Start Theme label Script
-================================================================
-=====-->
-                    <!-- Dashboard js -->
-                    <script src="<?php echo $dsh_dhs_js?>" type="text/javascript"></script>
-                    <!-- End Theme label Script
-================================================================
-=====-->
-                    <!--
-<link rel="stylesheet"
-href="htpts://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.c ss"/>-->
-                    <script src="<?php echo $slct_tw_js?>"></script>
-                    <script>
-                        $(document).ready(function () { $("#drid").select2(); });
-                    </script>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div id="includeHeader"></div>
+    <!-- jQuery -->
+    <script src="<?php	echo	$dsh_cs_jq_mn_js?>" type="text/javascript"></script>
+    <!-- jquery-ui -->
+    <script src="<?php echo $dsh_jq_mn_js?>" type="text/javascript"></script>
+     <!--  Bootstrap -->
+    <script src="<?php	echo	$dsh_btstp_mn_js?>" type="text/javascript"></script>
+    <!-- lobipanel -->
+    <script src="<?php echo $dsh_lbpnl_js?>" type="text/javascript"></script> 
+    <!-- Pace js-->
+    <script src="<?php echo $dsh_ps_mn_js?>" type="text/javascript"></script> 
+    <!--SlimScroll -->
+    <script src="<?php echo $dsh_slm_scrl?>" type="text/javascript"></script> 
+    <!--FastClick -->
+    <script src="<?php echo $dsh_fst_slk_js?>" type="text/javascript"></script>
+    <script src="<?php echo $dsh_cstm_js?>" type="text/javascript"></script>
+    <script src="<?php echo $dsh_dhs_js?>" type="text/javascript"></script>
+    <script src="<?php echo $slct_tw_js?>"></script>
+    <script>
+        $( document ).ready(function() {
+            $("#drid").select2();
+            $("#includeHeader").load("../html/header.html");
+            $("#includeFooter").load("../html/footer.html");
+            console.log( "ready!" );
+        });
+    </script>
 </body>
-
 </html>

@@ -8,14 +8,15 @@
     <script src="../jQuery/jqueryfile.js"></script>
     <script>
     $( document ).ready(function() {
-        $("#includeHtml").load("header.php");
-    console.log( "ready!" );
-});
+        $("#includeHeader").load("../html/header.html");
+        $("#includeFooter").load("../html/footer.html");
+        console.log( "ready!" );
+    });
    </script>
 </head>
 
 <body>
-    <div id="includeHtml"></div>
+    <div id="includeHeader"></div>
     <!-- <include src="../html/header.html"></include> -->
     <!-- <div class="top">
         <div class="left">
@@ -79,26 +80,27 @@
         <h3 class="description"> Engine Tweaks Pump Up Horsepower </h3>
     </div>
 
-    <div class="footer">
-                <div class="foot_top">
-                    <div class="footer2">
-                        <input type='text' name='commenterName' placeholder='Name'><br>
-                        <input type='text' name='commenterEmail' placeholder='Email'><br>
-                        <input type='text' name='commenterPhone' placeholder='Telephone'><br>
-                        <input type='text' name='comment' placeholder='Comment'><br>
-                        <input type='submit' value='Submit' />
-                    </div>
-                    <div class="Address">
-                        <h3>Address</h3>
-                        <h5>Kartar Nagar<br>3-1/2 Pusta<br> Delhi Pin code : 110053</h5>
-                    </div>
-                </div>
-                <a href="index.php">HOME</a>
-                <a href="about.php">About Us</a>
-                <a href="contact.php">CONTACT US</a>
-                <a href="login.php">PROFILE</a>
+    <div id="includeFooter"></div>
+    <!-- <div class="footer">
+        <div class="foot_top">
+            <div class="footer2">
+                <input type='text' name='commenterName' placeholder='Name'><br>
+                <input type='text' name='commenterEmail' placeholder='Email'><br>
+                <input type='text' name='commenterPhone' placeholder='Telephone'><br>
+                <input type='text' name='comment' placeholder='Comment'><br>
+                <input type='submit' value='Submit' />
             </div>
-        <h4 id="middleIt">	&copy; 2023 CAR GENIE | All Rights Reserved | Design by <span id="adminName">Amar Choudhary</span></h4>
+            <div class="Address">
+                <h3>Address</h3>
+                <h5>Kartar Nagar<br>3-1/2 Pusta<br> Delhi Pin code : 110053</h5>
+            </div>
+        </div>
+            <a href="index.php">HOME</a>
+            <a href="about.php">About Us</a>
+            <a href="contact.php">CONTACT US</a>
+            <a href="login.php">PROFILE</a>
+    </div> -->
+        <!-- <h4 id="middleIt">	&copy; 2023 CAR GENIE | All Rights Reserved | Design by <span id="adminName">Amar Choudhary</span></h4> -->
 </body>
 
 </html>

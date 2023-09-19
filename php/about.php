@@ -5,14 +5,16 @@
         <title> </title>
         <link rel="stylesheet" href="../css/home.css" type="text/css" />
         <script src="../jQuery/jqueryfile.js"></script>
-    <script>
-    $( document ).ready(function() {
-        $("#includeHtml").load("header.php");
-    console.log( "ready!" );
-});
-   </script>
+        <script>
+            $( document ).ready(function() {
+                $("#includeHeader").load("../html/header.html");
+                $("#includeFooter").load("../html/footer.html");
+                console.log( "ready!" );
+            });
+        </script>
     </head>
     <body>
+        <div id="includeHeader"></div>
         <!-- <div class="top">
             <div class="left"><p></p></div>
             <div class="right">
@@ -21,9 +23,8 @@
                     <a href="login.php">Login</a>
                 </h5>
             </div>
-        </div> -->
-        <div id="includeHtml"></div>
-        <!-- <div class="logo">
+        </div> 
+        <div class="logo">
             <div class="left">
                 <h1>
                     <img src="image/logo.jpg" width="40px" height="35px" />CAR
@@ -82,7 +83,7 @@ Search From Variety Of Used Car And Brand With Easy Finance & RC Transfer. Find 
             <h3 class="description">Engine Tweaks Pump Up Horsepower</h3>
         </div>
 
-        <div class="footer">
+        <!-- <div class="footer">
             <div class="foot_top">
                 <div class="footer2">
                     <input type="text" name="t1" placeholder="Name" /><br />
@@ -106,5 +107,7 @@ Search From Variety Of Used Car And Brand With Easy Finance & RC Transfer. Find 
             
         </div>
         <h4 id="middleIt">	&copy; 2023 CAR GENIE | All Rights Reserved | Design by <span id="adminName">Amar Choudhary</span></h4>
+         -->
+        <div id="includeFooter"></div>
     </body>
 </html>
