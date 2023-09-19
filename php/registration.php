@@ -4,15 +4,16 @@
         <title>CAR GENIE</title>
         <link rel="stylesheet" href="../css/home.css" type="text/css" />
         <script src="../jQuery/jqueryfile.js"></script>
-    <script>
-    $( document ).ready(function() {
-        $("#includeHtml").load("header.php");
-    console.log( "ready!" );
-});
-   </script>
+        <script>
+        $( document ).ready(function() {
+            $("#includeHeader").load("../html/header.html");
+            $("#includeFooter").load("../html/footer.html");
+            console.log( "ready!" );
+        });
+    </script>
     </head>
     <body>
-        <div id="includeHtml"></div>
+        <div id="includeHeader"></div>
         <!-- <div class="top">
             <div class="left">
                 <p>SALE UPTO 70% OFF. USE CODE "SALES 70%. SHOP NOW</p>
@@ -86,7 +87,7 @@
                 </form>
             </div>
         </div>
-        <div>
+        <!-- <div>
             <div class="footer">
                 <div class="foot_top">
                     <div class="footer2">
@@ -107,6 +108,7 @@
                 <a href="login.php">PROFILE</a>
             </div>
             <h4 id="middleIt">	&copy; 2023 CAR GENIE | All Rights Reserved | Design by <span id="adminName">Amar Choudhary</span></h4>
-        </div>
+        </div> -->
+        <div id="includeFooter"></div>
     </body>
 </html>

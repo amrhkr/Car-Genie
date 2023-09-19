@@ -34,7 +34,7 @@ margin-top: 15px;
 
 .logo{
 width: 100%;  height: 100px;
-background-color: white;
+background-color: #ffffff;
 
 }
 
@@ -75,7 +75,7 @@ padding-top: 40px;  padding-left: 100px;  border: 1px;
 .image{
 
 width: 100%;
-background-color: #f0f0f0;  float: left;
+background-color: #bdbdbd;  float: left;
 height: 550px;
 
 }
@@ -311,7 +311,7 @@ vertical-align: top; /* Align them at the top */
 width: 100%;
 height: 2200px;
 opacity: 0.92;
-background-color: #fff;
+background-color: #757575;
 }
 .block{
 height: 500px;
@@ -736,4 +736,18 @@ input[type="submit"] {
 input[type="reset"]:hover,
 input[type="submit"]:hover {
     background-color: #0056b3;
+}
+
+.modal-body {
+    font-size:50px;
+    font-weight:bold;
+    color:#e70b3e;
+    text-align:center;
+}
+
+.welcome {
+    width: 100%; 
+    height: 100px;
+    font-weight: bold;
+    font-size: 50px;
 }

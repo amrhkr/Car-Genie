@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Admin Login</title>
+    <title>Admin Registration</title>
     <link rel="stylesheet" href="../css/home.css" type="text/css" />
     <script src="../jQuery/jqueryfile.js"></script>
     <script>
@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div id="includeHeader"></div>    
+    <div id="includeHeader"></div>
     <!-- <div class="top">
         <div class="left">
             <p>SALE UPTO 70% OFF. USE CODE "SALES 70%. SHOP
@@ -66,20 +66,29 @@
                 <input type="submit" value="Log In" onclick="alert('Login successfull')">
                 <input type="submit" value="Reset"><br><br>
             </form> -->
-            <form name="login" method="post" action="admin_login_process.php">
+            <form name="signup" method="post" action="admin_insert.php">
                 <fieldset>
-                  <legend>ADMIN LOGIN</legend>
+                  <legend>ADMIN REGISTRATION</legend>
                   <label for="adminId">ADMIN ID:</label>
                   <input type="text" id="adminId" name="userid" placeholder="User Id..." required><br><br>
+
+                  <label for="adminName1">ADMIN NAME:</label>
+                  <input type="text" id="adminName1" name="username" placeholder="User Name..." required><br><br>
 
                   <label for="password">PASSWORD:</label>
                   <input type="password" id="password" name="password" placeholder="Password..." required><br><br>
 
-                  <input type="submit" value="Log In" onclick="alert('Login successful')">
-                  <input type="reset" value="Reset">
+                  <label for="mobile">MOBILE:</label>
+                  <input type="text" id="mobile" name="mobile" placeholder="Mobile..."><br><br>
+
+                  <input type="submit" value="SIGNUP">
+                  <input type="reset" value="RESET">
                 </fieldset>
             </form>
         </center>
+    </div>
+    <div>
+        <a href="admin_login.php">LogIn</a>
     </div>
     <!-- <div class="footer">
         <div class="foot_top">

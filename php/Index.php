@@ -80,7 +80,7 @@
         <h3 class="description"> Engine Tweaks Pump Up Horsepower </h3>
     </div>
 
-    <div id="includeFooter"></div>
+    
     <!-- <div class="footer">
         <div class="foot_top">
             <div class="footer2">
@@ -101,6 +101,6 @@
             <a href="login.php">PROFILE</a>
     </div> -->
         <!-- <h4 id="middleIt">	&copy; 2023 CAR GENIE | All Rights Reserved | Design by <span id="adminName">Amar Choudhary</span></h4> -->
-</body>
-
+        <div id="includeFooter"></div>
+    </body>
 </html>

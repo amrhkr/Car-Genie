@@ -28,7 +28,7 @@ $cur_dt_ymd=date("Y-m-d");
 <body class="hold-transition sidebar-mini">
     <div class="top">
         <div class="left">
-            <h2>Admin panel</h2>
+            <h2>Admin Panel</h2>
         </div>
         <div class="right">
             <h5>
@@ -69,75 +69,60 @@ $cur_dt_ymd=date("Y-m-d");
                 </div>
                 <div class="header-title">
                     <center>
-                        <h1 style="font-weight:900;font-size:35px;color:red">USERS DETAILS</h1>
+                        <h1 style="font-weight:900;font-size:35px;color:green">ADMIN DETAILS</h1>
                     </center>
                     <br>
                     <div class="btn-group" id="buttonlist"></div>
                 </div>
             </section>
-            <!-- Main content -->
             <section class="content">
                 <div class="row"></div>
                 <?php
-                    //Collect Normal Data Code Start
-                    $clt_dta ="select * from customer where Cus_id!='' ";
-                    $result=$conn->query($clt_dta);
+                    $admin_data = "SELECT * FROM `admin` WHERE id > 0";
+                    $result=$conn->query($admin_data);
 
                 ?>
                 <div class="table-responsive">
-                    <table class="table table-bordered table-striped table-hover">
+                    <table class="table table-bordered table-striped table-hover" border="1">
                         <thead>
-                            <table border="1">
                                 <tr class="info">
-                                    <th>S. No.</th>
-                                    <th>CUSTOMER ID</th>
-                                    <th>CISTOMER NAME</th>
-                                    <th>EMAIL ID</th>
-                                    <th>PASSWORD</th>
-                                    <th>ADDRESS</th>
-                                    <th>STATE</th>
-                                    <th>MOBILE NUMBER</th>
+                                    <th>Sr. No.</th>
+                                    <th>Admin ID</th>
+                                    <th>Admin Name</th>
+                                    <th>Password</th>
+                                    <th>Mobile Number</th>
                                 </tr>
                         </thead>
                         <tbody>
-                            <?php $a=1;
+                            <?php $counter=1;
                                 while ($row = mysqli_fetch_array($result)){
-                                    $pmt_id=$row['Cus_id'];
-                                    $crd_no=$row['Cus_Name'];
-                                    $add=$row['Email_ID'];
-                                    $cus_id=$row['Cus_Pwd'];
-                                    $purch_pric=$row['Cus_Add'];
-                                    $pur_dte=$row['Cus_State'];
-                                    $purch_tme=$row['Cus_Phone'];
+                                    $adminData[] = array(
+                                        'Login_ID' =>$row['Login_ID'],
+                                        'Admin_Name' => $row['Admin_Name'],
+                                        'Admin_Pwd' => $row['Admin_Pwd'],
+                                        'Admin_Phone' => $row['Admin_Phone']
+                                    );
                                 }
                             ?>
+                            
+                            <?php foreach ($adminData as $admin){ ?>
                             <tr>
-                                <td style="font-weight:900; color: red; font-size : 25px;">
-                                    <?php echo $a;?>
+                                <td style="font-weight: 900; color: red; font-size: 25px;">
+                                    <?php echo $counter++;?>
                                 </td>
                                 <td style="font-weight:900; color: blue; font-size : 25px;">
-                                    <?php echo $pmt_id?>
+                                    <?php echo $admin['Login_ID']; ?>
                                 </td>
                                 <td style="font-weight:900; color: blue; font-size : 25px;">
-                                    <?php echo $crd_no?>
+                                    <?php echo $admin['Admin_Name']; ?>
                                 </td>
                                 <td style="font-weight:900; color: blue; font-size : 25px;">
-                                    <?php echo $add;?>
+                                    <?php echo $admin['Admin_Pwd']; ?>
                                 </td>
                                 <td style="font-weight:900; color: blue; font-size : 25px;">
-                                    <?php echo $cus_id?>
+                                    <?php echo $admin['Admin_Phone']; ?>
                                 </td>
-                                <td style="font-weight:900; color: blue; font-size : 25px;">
-                                    <?php echo $purch_pric?>
-                                </td>
-                                <td style="font-weight:900; color: blue; font-size : 25px;">
-                                    <?php echo $pur_dte?>
-                                </td>
-                                <td style="font-weight:900; color: blue; font-size : 25px;">
-                                    <?php echo $purch_tme?>
-                                </td>
-                                <?php $a ++;?>
-                                <?php  if($cus_id!=''); ?>
+                                <?php } ?>
                             </tr>
                         </tbody>
                     </table>

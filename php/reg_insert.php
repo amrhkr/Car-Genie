@@ -17,7 +17,7 @@ Cus_Sex='$cus_sex',Cus_Phone='$cus_mbl'";
 $quz_id=mysqli_query($conn,$ad_quz);
 ?>
 <script>
-    var answer = confirm("You are Successfull Registration..! ");
+    var answer = confirm("Registered..!");
     if (answer) {
         window.location = "login.php";
     }
