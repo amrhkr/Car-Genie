@@ -31,6 +31,21 @@ CREATE TABLE `admin` (
 
 /*Data for the table `admin` */
 
+/*Table structure for table `comments` */
+
+DROP TABLE IF EXISTS `comments`;
+
+CREATE TABLE `comments` (
+  `Id` int NOT NULL AUTO_INCREMENT,
+  `Name` varchar(255) DEFAULT NULL,
+  `Email_ID` varchar(255) NOT NULL,
+  `Telephone` mediumtext,
+  `Comment` varchar(511) NOT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+/*Data for the table `comments` */
+
 /*Table structure for table `customer` */
 
 DROP TABLE IF EXISTS `customer`;
