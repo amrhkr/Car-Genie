@@ -21,15 +21,19 @@ USE `car_genie`;
 DROP TABLE IF EXISTS `admin`;
 
 CREATE TABLE `admin` (
-  `Admin_ID` int NOT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
   `Login_ID` varchar(255) NOT NULL,
   `Admin_Name` varchar(255) NOT NULL,
   `Admin_Pwd` varchar(255) NOT NULL,
   `Admin_Phone` mediumtext,
-  PRIMARY KEY (`Admin_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 /*Data for the table `admin` */
+
+insert  into `admin`(`id`,`Login_ID`,`Admin_Name`,`Admin_Pwd`,`Admin_Phone`) values 
+(1,'amrhkr','Amar Choudhary','lovemerMORE!1230','9968853896'),
+(2,'amrhkr','Amar Choudhary','lovemerMORE!1230','');
 
 /*Table structure for table `comments` */
 
@@ -61,7 +65,7 @@ CREATE TABLE `customer` (
   `Cus_State` varchar(255) NOT NULL,
   `Cus_Phone` mediumtext,
   PRIMARY KEY (`Cus_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 /*Data for the table `customer` */
 
@@ -69,7 +73,8 @@ insert  into `customer`(`Cus_id`,`Cus_Name`,`Email_ID`,`Cus_Pwd`,`Cus_Sex`,`Cus_
 (1,'Amar Choudhary','Amar9t8@gmail.com','12334',NULL,'House No. J-60, Kartar Nagar, 3-1/2 Pusta Gali no. 1, Delhi-53','NEW DELHI','Delhi','+919968853896'),
 (2,'Amar Choudhary','amarhakerd@gmail.com','32432',NULL,'House No. J-60, Kartar Nagar, 3-1/2 Pusta Gali no. 1, Delhi-53','North East Delhi','DELHI','9968853896'),
 (3,'Rahul Prasad','rahul@gmail.com','3982','Male','Test Address','Noida','Uttar Pradesh','99827386386'),
-(4,'Amar Choudhary','Amar9t8@gmail.com','123','Male','House No. J-60, Kartar Nagar, 3-1/2 Pusta Gali no. 1, Delhi-53','NEW DELHI','Delhi','+919968853896');
+(4,'Amar Choudhary','Amar9t8@gmail.com','123','Male','House No. J-60, Kartar Nagar, 3-1/2 Pusta Gali no. 1, Delhi-53','NEW DELHI','Delhi','+919968853896'),
+(5,'Rahul Yadav','rahul9t8@gmail.com','somthing!!','Male','House No. J-60, Kartar Nagar, 3-1/2 Pusta Gali no. 1, Delhi-53','NEW DELHI','Delhi','+919968853896');
 
 /*Table structure for table `feedback` */
 
