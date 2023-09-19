@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>CAR GENIE</title>
+    <title>CAR GENIE - Feedback</title>
     <link rel="stylesheet" href="../css/home.css" type="text/css" />
     <script src="../jQuery/jqueryfile.js"></script>
     <script>
@@ -58,46 +58,29 @@
         <a href="contact.php">Contact Us</a>
     </div>
     <div class="frame1">
-
         <form action="fed_bck_sts.php" method="post">
-            <table cellpadding="2" width="30%" height="500px" align="center" cellspacing="2">
-                <tr>
-                    <td colspan="2">
-                        <center>
-                            <font size="36px"><b>FEEDBACK</b></font>
-                        </center>
-                    </td>
-                </tr>
+        <fieldset>
+            <legend>FEEDBACK</legend>
 
-                <tr>
-                    <td> Name :</td>
-                    <td><input type="text" name="cus_nme" id="Name" size="30"></td>
-                <tr>
-                    <td>Vehicle Id:</td>
-                    <td><input type="text" name="vcli_id" id="password" size="30"></td>
-                </tr>
+            <label for="Name">Name:</label>
+            <input type="text" name="cus_nme" id="Name" required>
 
-                <tr>
-                    <td>Feed Details:</td>
-                    <td><input type="text" name="detls" id="Email" size="30"></td>
-                </tr>
+            <label for="VehicleId">Vehicle ID:</label>
+            <input type="text" name="vcli_id" id="VehicleId" required>
 
-                <tr>
-                    <td>Response: </td>
-                    <td><input type="text" name="respns" id="Mobileno" size="30"></td>
-                </tr>
+            <label for="FeedDetails">Feed Details:</label>
+            <input type="text" name="detls" id="FeedDetails" required>
 
-                <tr>
-                    <td>Feedback Status: </td>
-                    <td><input type="text" name="sts" id="stt" size="30"></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td colspan="2"><input type="reset"> <input type="submit" value="submit form" /></td>
-                </tr>
-            </table>
+            <label for="Response">Response:</label>
+            <input type="text" name="respns" id="Response">
 
-        </form>
+            <label for="FeedbackStatus">Feedback Status:</label>
+            <input type="text" name="sts" id="FeedbackStatus">
+            <br/>
+            <input type="reset" value="RESET" />
+            <input type="submit" value="SUBMIT" />
+        </fieldset>
+    </form>
     </div>
     <!-- <div class="footer">
         <div class="foot_top">

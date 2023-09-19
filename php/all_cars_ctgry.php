@@ -6,12 +6,20 @@
 <head>
     <title>CAR GENIE - All Cars</title>
     <link rel="stylesheet" href="../css/home.css" type="text/css" />
-    
+    <script src="../jQuery/jqueryfile.js"></script>
+    <script>
+        $( document ).ready(function() {
+            $("#includeHeader").load("../html/header.html");
+            $("#includeFooter").load("../html/footer.html");
+            console.log( "ready!" );
+        });
+    </script>
 </head>
 
 <body>
     <h1><?php print_r($_SESSION) ?></h1>
-    <div class="top">
+    <div id="includeHeader"></div>
+    <!-- <div class="top">
         <div class="left">
             <p>SALE UPTO 70% OFF. USE CODE "SALES 70%. SHOP NOW</P>
         </div>
@@ -34,7 +42,7 @@
             <p><img src="../image/phone.svg" width="26px" height="36px">
                 Order or call us:(+91)9968853896</p>
         </div>
-    </div>
+    </div> -->
 
 
     <div id="menu">
@@ -110,7 +118,7 @@
     </div>
 
 
-    <div class="footer">
+    <!-- <div class="footer">
                 <div class="foot_top">
                     <div class="footer2">
                         <input type='text' name='commenterName' placeholder='Name'><br>
@@ -129,7 +137,8 @@
                 <a href="contact.php">CONTACT US</a>
                 <a href="login.php">PROFILE</a>
             </div>
-    <h4 id="middleIt">	&copy; 2023 CAR GENIE | All Rights Reserved | Design by <span id="adminName">Amar Choudhary</span></h4>
+    <h4 id="middleIt">	&copy; 2023 CAR GENIE | All Rights Reserved | Design by <span id="adminName">Amar Choudhary</span></h4> -->
+    <div id="includeFooter"></div>
 </body>
 
 </html>

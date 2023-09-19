@@ -4,10 +4,7 @@
     $admin="SELECT * FROM admin";
     $adminData=$conn->query($admin);
     $adminCollection=$adminData->fetch_assoc();
-    // while ($row = mysqli_fetch_array($result)){
-    //     echo $row;
-    // }
-    // echo $adminCollection;
+    
     $Login_ID=$adminCollection['Login_ID'];
     $Admin_Name=$adminCollection['Admin_Name'];
     $Admin_pwd=$adminCollection['Admin_pwd'];
