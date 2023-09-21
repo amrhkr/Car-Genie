@@ -19,32 +19,6 @@
 <body>
     <h1><?php print_r($_SESSION) ?></h1>
     <div id="includeHeader"></div>
-    <!-- <div class="top">
-        <div class="left">
-            <p>SALE UPTO 70% OFF. USE CODE "SALES 70%. SHOP NOW</P>
-        </div>
-        <div class="righth">
-            <p style="color:#fff; padding-top: 20px;">Welcome
-                <a href='logout.php'
-                    style="color: #fff; text-decoration: none; font-family: sans-serif; word-spacing: 60px; ">LogOut</a>
-
-
-        </div>
-
-    </div>
-
-    <div class="logo">
-        <div class="left">
-            <h1><img src="../image/logo.jpg" width="40px" height="50px" />CAR
-                GENIE</h1>
-        </div>
-        <div class="right">
-            <p><img src="../image/phone.svg" width="26px" height="36px">
-                Order or call us:(+91)9968853896</p>
-        </div>
-    </div> -->
-
-
     <div id="menu">
         <a href="index.php">Home</a>
         <a href="about.php">About Us</a>
@@ -126,7 +100,7 @@
                 <input type='Submit' value='BuyNow' onclick="location.href='payment.php'">
             </center>
         </div>
-        <div class="block"><br/><br/>
+        <div class="block"><br/><br/><br/>
             <img    
                 src="../image/cars/toyota.jpg"
                 alt="2019 Toyota Corolla"
@@ -141,7 +115,7 @@
                 <input type='Submit' value='BuyNow' onclick="location.href='payment.php'">
             </center>
         </div>
-        <div class="block"><br/><br/>
+        <div class="block"><br/><br/><br/>
             <img    
                 src="../image/cars/nissan.jpg"
                 alt="2019 Nissan"
@@ -156,17 +130,35 @@
                 <input type='Submit' value='BuyNow' onclick="location.href='payment.php'">
             </center>
         </div>
-        <div class="block">
-            <img src="../image/cars/bmw.jpg" />
-            <h3>2019 BMW<br> Price: &#8377 700000<br>Vechile id=V2645
+        <div class="block"><br/><br/><br/><br/><br/>
+            <img    
+                src="../image/cars/bmw.jpg"
+                alt="2019 BMW"
+                id="productImage"
+                data-product-id="V2645"
+                data-product-name="2019 BMW"
+                data-product-price="700000"
+                onmouseover="this.style.cursor='pointer';"
+            />
+            <h3>Model : 2019 BMW &nbsp[Price: &#8377 700000]</h3>   
+            <center>
                 <input type='Submit' value='BuyNow' onclick="location.href='payment.php'">
-
+            </center>
         </div>
-        <div class="block">
-            <img src="../image/cars/infinity.jpg" />
-            <h3>2019 Infiniti<br> Price: &#8377 400000<br/>
+        <div class="block"><br/><br/><br/><br/><br/>
+            <img    
+                src="../image/cars/infinity.jpg"
+                alt="2019 Infiniti"
+                id="productImage"
+                data-product-id="V2946"
+                data-product-name="2019 Infiniti"
+                data-product-price="400000"
+                onmouseover="this.style.cursor='pointer';"
+            />
+            <h3>Model : 2019 Infiniti &nbsp[Price: &#8377 400000]</h3>   
+            <center>
                 <input type='Submit' value='BuyNow' onclick="location.href='payment.php'">
-
+            </center>
         </div>
     </div>
 

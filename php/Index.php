@@ -17,30 +17,6 @@
 
 <body>
     <div id="includeHeader"></div>
-    <!-- <include src="../html/header.html"></include> -->
-    <!-- <div class="top">
-        <div class="left">
-            <p></p>
-        </div>
-        <div class="right">
-
-            <h5>
-                <a href="registration.php">CreateAccount</a>
-                <a href="login.php">Login</a>
-            </h5>
-        </div>
-    </div>
-
-    <div class="logo">
-        <div class="left">
-            <h1><img src="../image/logo.jpg" width="40px" height="50px" />CAR
-                GENIE</h1>
-        </div>
-        <div class="right">
-            <p><img src="../image/phone.svg" width="26px" height="36px">
-                Order or call us:(+91)9968853896</p>
-        </div>
-    </div> -->
 
     <div id="menu">
         <a href="index.php">Home</a>
@@ -61,11 +37,6 @@
         <a href="contact.php">Contact Us</a>
         <a href="feedback.php">FeedBack</a>
     </div>
-    <!-- <div class="pick">
-<h1>
-
-</h1>
-</div> -->
     <center>
         <h1>WHAT'S POPULAR IN CARS</h1>
     </center>
@@ -79,28 +50,6 @@
         </h3>
         <h3 class="description"> Engine Tweaks Pump Up Horsepower </h3>
     </div>
-
-    
-    <!-- <div class="footer">
-        <div class="foot_top">
-            <div class="footer2">
-                <input type='text' name='commenterName' placeholder='Name'><br>
-                <input type='text' name='commenterEmail' placeholder='Email'><br>
-                <input type='text' name='commenterPhone' placeholder='Telephone'><br>
-                <input type='text' name='comment' placeholder='Comment'><br>
-                <input type='submit' value='Submit' />
-            </div>
-            <div class="Address">
-                <h3>Address</h3>
-                <h5>Kartar Nagar<br>3-1/2 Pusta<br> Delhi Pin code : 110053</h5>
-            </div>
-        </div>
-            <a href="index.php">HOME</a>
-            <a href="about.php">About Us</a>
-            <a href="contact.php">CONTACT US</a>
-            <a href="login.php">PROFILE</a>
-    </div> -->
-        <!-- <h4 id="middleIt">	&copy; 2023 CAR GENIE | All Rights Reserved | Design by <span id="adminName">Amar Choudhary</span></h4> -->
-        <div id="includeFooter"></div>
+    <div id="includeFooter"></div>
     </body>
 </html>
