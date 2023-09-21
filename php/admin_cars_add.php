@@ -24,13 +24,6 @@
         </div>
     </div>
     <div id="includeHeader"></div>
-    <!-- <div class="logo">
-        <div class="left">
-            <h1>CAR GENIE</h1>
-        </div>
-        <div class="right">
-
-        </div> -->
     </div>
 
 

@@ -12,16 +12,6 @@
 <DOCTYPE html>
     <head>
     <script src="../jQuery/jqueryfile.js"></script>
-    <!-- <script>
-    $( document ).ready(function() {
-        let delay = 3000;
-            let url = "all_cars_ctgry.php";
-            setTimeout(function(){
-                location = url;
-            },3000)
-    console.log( "ready!" );
-});
-    </script> -->
     </head>
     <body>
         <div class="modal-body">

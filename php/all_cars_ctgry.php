@@ -11,6 +11,7 @@
         $( document ).ready(function() {
             $("#includeHeader").load("../html/header.html");
             $("#includeFooter").load("../html/footer.html");
+            $("#commonMenu").load("../html/menu.html");
             console.log( "ready!" );
         });
     </script>
@@ -19,25 +20,7 @@
 <body>
     <h1><?php print_r($_SESSION) ?></h1>
     <div id="includeHeader"></div>
-    <div id="menu">
-        <a href="index.php">Home</a>
-        <a href="about.php">About Us</a>
-        <a href="#" onclick="alert('Please Login First...!!!')">All CARS</a>
-        <select onclick="alert('Please Login First...!!!')">
-            <option>Cars Category</option>
-            <option value="car_catgy_one.php">Kia Forte</option>
-            <option value="car_catgy_two.php">Scorpio Car</option>
-            <option value="car_catgy_one.php">GT Sport Car</option>
-            <option value="car_catgy_one.php">Audi A1</option>
-            <option value="car_catgy_one.php">Toyota Corolla</option>
-            <option value="car_catgy_one.php">Nissan</option>
-            <option value="car_catgy_one.php">BMW</option>
-            <option value="car_catgy_one.php">Infiniti</option>
-        </select>
-
-        <a href="contact.php">Contact Us</a>
-        <a href="feedback.php">FeedBack</a>
-    </div>
+    <div id="commonMenu"></div>
     <div class="product">
         <div class="block">
             <img    
