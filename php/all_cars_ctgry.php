@@ -64,54 +64,107 @@
         <a href="contact.php">Contact Us</a>
         <a href="feedback.php">FeedBack</a>
     </div>
-
-
     <div class="product">
         <div class="block">
-            <img src="../image/cars/kiasport.jpg"  />
-            <h3>2020 Kia Forte GT Sport Car<br> Price:500000<br>Vechile id=V2345
-                <input type='Submit' value="BuyNow" onclick="location.href='payment.php'">
-
+            <img    
+                src="../image/cars/kiasport.jpg"
+                alt="Kia Forte GT Sport Car"
+                id="productImage"
+                data-product-id="V2345"
+                data-product-name="2020 Kia Forte GT Sport Car"
+                data-product-price="500000"
+                onmouseover="this.style.cursor='pointer';"
+                
+            />
+            <h3>Model : 2020 Kia Forte GT Sport Car &nbsp[Price: &#8377 5000000]</h3>   
+            <center>
+                <input type='Submit' value='BuyNow' onclick="location.href='payment.php'">
+            </center>
         </div>
         <div class="block">
-            <img src="../image/cars/scorpio.jpg" />
-            <h3> 2020 Scorpio Car<br> Price:200000<br>Vechile id=V2045
+            <img    
+                src="../image/cars/scorpio.jpg"
+                alt="2020 Scorpio Car"
+                id="productImage"
+                data-product-id="V2045"
+                data-product-name="2020 Scorpio Car"
+                data-product-price="2000000"
+                onmouseover="this.style.cursor='pointer';"
+            />
+            <h3>Model : 2020 Scorpio Car &nbsp[Price: &#8377 2000000]</h3>   
+            <center>
                 <input type='Submit' value='BuyNow' onclick="location.href='payment.php'">
-
+            </center>
         </div>
-        <div class="block">
-            <img src="../image/cars/ferrari.jpg" />
-            <h3>2023 Ferrari <br> Price:6000000<br>Vechile id=V2046
+        <div class="block"><br/>
+            <img    
+                src="../image/cars/ferrari.jpg"
+                alt="2023 Ferrari"
+                id="productImage"
+                data-product-id="V2046"
+                data-product-name="2023 Ferrari"
+                data-product-price="6000000"
+                onmouseover="this.style.cursor='pointer';"
+            />
+            <h3>Model : 2023 Ferrari &nbsp[Price: &#8377 6000000]</h3>   
+            <center>
                 <input type='Submit' value='BuyNow' onclick="location.href='payment.php'">
-
+            </center>
         </div>
-        <div class="block">
-            <img src="../image/cars/audi.jpg" />
-            <h3>2019 Audi A1 Sportback <br> Price:400000<br>Vechile id=V2047
+        <div class="block"><br/>
+            <img    
+                src="../image/cars/audi.jpg"
+                alt="2019 Audi A1 Sportback"
+                id="productImage"
+                data-product-id="V2047"
+                data-product-name="2019 Audi A1 Sportback"
+                data-product-price="400000"
+                onmouseover="this.style.cursor='pointer';"
+            />
+            <h3>Model : 2019 Audi A1 Sportback &nbsp[Price: &#8377 400000]</h3>   
+            <center>
                 <input type='Submit' value='BuyNow' onclick="location.href='payment.php'">
-
+            </center>
         </div>
-        <div class="block">
-            <img src="../image/cars/toyota.jpg" />
-            <h3>2019 Toyota Corolla<br> Price:200000<br>Vechile id=V2049
+        <div class="block"><br/><br/>
+            <img    
+                src="../image/cars/toyota.jpg"
+                alt="2019 Toyota Corolla"
+                id="productImage"
+                data-product-id="V2049"
+                data-product-name="2019 Toyota Corolla"
+                data-product-price="200000"
+                onmouseover="this.style.cursor='pointer';"
+            />
+            <h3>Model : 2019 Toyota Corolla &nbsp[Price: &#8377 200000]</h3>   
+            <center>
                 <input type='Submit' value='BuyNow' onclick="location.href='payment.php'">
-
+            </center>
         </div>
-        <div class="block">
-            <img src="../image/cars/nissan.jpg" />
-            <h3>2019 Nissan<br> Price:300000<br>Vechile id=V2946
+        <div class="block"><br/><br/>
+            <img    
+                src="../image/cars/nissan.jpg"
+                alt="2019 Nissan"
+                id="productImage"
+                data-product-id="V2946"
+                data-product-name="2019 Nissan"
+                data-product-price="300000"
+                onmouseover="this.style.cursor='pointer';"
+            />
+            <h3>Model : 2019 Nissan &nbsp[Price: &#8377 300000]</h3>   
+            <center>
                 <input type='Submit' value='BuyNow' onclick="location.href='payment.php'">
-
+            </center>
         </div>
         <div class="block">
             <img src="../image/cars/bmw.jpg" />
-            <h3>2019 BMW<br> Price:700000<br>Vechile id=V2645
+            <h3>2019 BMW<br> Price: &#8377 700000<br>Vechile id=V2645
                 <input type='Submit' value='BuyNow' onclick="location.href='payment.php'">
 
         </div>
         <div class="block">
             <img src="../image/cars/infinity.jpg" />
-            <h3>2019 Infiniti<br> Price:400000<br/>
+            <h3>2019 Infiniti<br> Price: &#8377 400000<br/>
                 <input type='Submit' value='BuyNow' onclick="location.href='payment.php'">
 
         </div>
@@ -139,6 +192,22 @@
             </div>
     <h4 id="middleIt">	&copy; 2023 CAR GENIE | All Rights Reserved | Design by <span id="adminName">Amar Choudhary</span></h4> -->
     <div id="includeFooter"></div>
+    <script>
+        document.getElementById("productImage").addEventListener("click", function() {
+            // Get product details from the data attributes
+            var productId = this.getAttribute("data-product-id");
+            var productName = this.getAttribute("data-product-name");
+            var productPrice = this.getAttribute("data-product-price");
+            
+        
+            // Encode product details as query parameters
+            var encodedproductId = encodeURIComponent(productId);
+            var encodedProductName = encodeURIComponent(productName);
+            var encodedProductPrice = encodeURIComponent(productPrice);
+        
+            // Redirect to the payment page with product details as query parameters
+            window.location.href = "payment.php?modelId=" + encodedproductId + "&modelName=" + encodedProductName + "&modelPrice=" + encodedProductPrice;
+    });
+</script>
 </body>
-
 </html>
