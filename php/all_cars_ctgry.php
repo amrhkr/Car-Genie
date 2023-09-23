@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <h1><?php print_r($_SESSION) ?></h1>
+    <!-- <h1><?php print_r($_SESSION) ?></h1> -->
     <div id="includeHeader"></div>
     <div id="commonMenu"></div>
     <div class="product">

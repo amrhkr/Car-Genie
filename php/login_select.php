@@ -1,13 +1,18 @@
-<?php  
-    session_start();  
+<?php
     include("conn.php");
     $cus_email=$_POST["cus_email"];
     $cus_id = "select * from customer where Email_ID='$cus_email'";
-    // echo $cus_id;
     $qst_cus_id=$conn->query($cus_id);
+    if ($qst_cus_id->num_rows>0) {
     $clct_cus_id=$qst_cus_id->fetch_assoc();
     $ad_eml=$clct_cus_id['Email_ID'];
     $ad_mb=$clct_cus_id['Cus_Pwd'];
+     session_start();
+     $_SESSION['email'] = $ad_eml;
+     $_SESSION['c_id']=$ad_mb;
+    } else {
+        echo "Hello";
+    }
 ?>
 <DOCTYPE html>
     <head>

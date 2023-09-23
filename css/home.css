@@ -68,10 +68,13 @@ margin-left: 70px;  text-decoration: none;  color: white;
 }
 
 #menu select{  border: none;
-background-color: #000;  color: #fff;
+background-color: #000;  
+color: #fff;
 font-size: 24px;
-text-align: center;  margin-left: 70px;
+text-align: center;  
+margin-left: 70px;
 font-family: sans-serif;
+font-weight: bold;
 }
 .pick{
 background-image: url('image/carimg1.jpg');  background-size: cover;
@@ -580,7 +583,7 @@ font-size: 50px;
 }
 .payment{
     width: 40%;
-    height: 65%;
+    /* height: 65%; */
     margin-top: 50px;
     margin-bottom: 50px;
     color: #33ff00;
@@ -782,3 +785,64 @@ input[type="submit"]:hover {
     font-weight: bold;
     font-size: 50px;
 }
+
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    width: 30%; /* Adjust this width as needed to fit three items in a row */
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.item h1 {
+    font-size: 24px;
+}
+
+.item img {
+    width: 100%;
+    max-width: 200px; /* Adjust the max-width as needed */
+    height: auto;
+    mix-blend-mode: multiply; /* Apply the mix-blend-mode property */
+}
+
+.item img:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.2);
+    transition: transform 0.4s ease;
+}
+
+.item:hover img {
+    mix-blend-mode: normal; /* Reset the mix-blend-mode on hover */
+}
+
+
+.item h3 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.item input[type='button'] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.item input[type='button']:hover {
+    background-color: #00b39b;
+    /* transform: scale(1.2); */
+}
+
+
+

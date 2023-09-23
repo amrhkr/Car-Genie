@@ -11,7 +11,14 @@
         <div class="right">
             <h5>
                 <a href="registration.php" title="Create an account, it's Free!">CreateAccount</a>
-                <a href="login.php" title="Login" id="login_out">Login</a>
+                <?php if (isset($_SESSION['user_id'])) {
+                    // Session is set, so display "Log Out"
+                    ?> <a href="logout.php" title="Log Out">Log Out</a>;
+                <?php }  else { ?>
+                    // Session is not set, so display "Log In"
+                    <a href="login.php" title="Log In">Log In</a>;
+                <?php } ?>
+                <!-- <a href="login.php" title="Login" id="login_out"></a> -->
             </h5>
         </div>
     </div>
@@ -23,5 +30,12 @@
             <p><img src="../image/phone.svg" width="16px" height="16px/"> Order or call us :(+91)9968853896</p>
         </div>
     </div>
+    <!-- <script>
+        if(<?php isSet $SESSION "emailid" ?>){
+
+        }
+        var isloggedin = $("#login_out").val();
+        alert(isloggedin);
+    </script> -->
 </body>
 </html>
