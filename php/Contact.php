@@ -18,15 +18,13 @@
 <body>
     <div id="includeHeader"></div>
     <div id="commonMenu"></div>
-    <center>
-        <div class="frame">
-            <form id="contact">
-                <h1>CONTACT US</h1>
-                <h3> Name : Amar Choudhary<br><br> Phone No : 9968853896<br><br> Email Id : amar9t8@gmail.com<br><br>
-                    Address : Kartar Nagar, 3-1/2 Pusta, Delhi-110053<h3>
-            </form>
-        </div>
-    </center>
+    <div class="frame center">
+        <form id="contact" class="center-content">
+            <h1>CONTACT US</h1>
+            <h3>Name : Amar Choudhary<br><br>Phone No : 9968853896<br><br>Email Id : amar9t8@gmail.com<br><br>Address: Kartar Nagar, 3-1/2 Pusta, Delhi-110053</h3>
+        </form>
+    </div>
+    
     <div id="includeFooter"></div>
 </body>
 

@@ -15,21 +15,22 @@
     <body>
         <div id="includeHeader"></div>
         <div id="commonMenu"></div>
-        <div class="frame2">
-            <center>
-                <form name="login" method="post" action="login_select.php">
+        <center>
+            <div class="frame1 center">
+                <form name="login" method="post" action="login_select.php"
+                    class="feedback-form">
                     <fieldset>
-                        <legend>Login</legend>
+                        <legend>LOGIN</legend>
                         <label for="Name">User ID:</label>
                         <input type="text" name="cus_email" id="Name" required>
                         <label for="Password">Password:</label>
-                        <input type="password" name="cus_pwd" id="Password" required><br/>
+                        <input type="password" name="cus_pwd" id="Password" required><br />
                         <input type="reset" value="Reset">
                         <input type="submit" value="Submit">
                     </fieldset>
                 </form>
-            </center>
-        </div>
+            </div>
+        </center>
         <div id="includeFooter"></div>
-        </body>
-    </html>
+    </body>
+</html>

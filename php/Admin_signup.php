@@ -17,25 +17,25 @@
 <body>
     <div id="includeHeader"></div>
     <div id="commonMenu"></div>
-    <div class="frame2">
+    <div class="frame1 center">
         <center>
-            <form name="signup" method="post" action="admin_insert.php">
+            <form name="signup" method="post" action="admin_insert.php" class="feedback-form">
                 <fieldset>
                   <legend>ADMIN REGISTRATION</legend>
                   <label for="adminId">ADMIN ID:</label>
-                  <input type="text" id="adminId" name="userid" placeholder="User Id..." required><br><br>
+                  <input type="text" id="adminId" name="userid" placeholder="User Id..." required>
 
                   <label for="adminName1">ADMIN NAME:</label>
-                  <input type="text" id="adminName1" name="username" placeholder="User Name..." required><br><br>
+                  <input type="text" id="adminName1" name="username" placeholder="User Name..." required>
 
                   <label for="password">PASSWORD:</label>
-                  <input type="password" id="password" name="password" placeholder="Password..." required><br><br>
+                  <input type="password" id="password" name="password" placeholder="Password..." required>
 
                   <label for="mobile">MOBILE:</label>
-                  <input type="text" id="mobile" name="mobile" placeholder="Mobile..."><br><br>
-
-                  <input type="submit" value="SIGNUP">
-                  <input type="reset" value="RESET">
+                  <input type="text" id="mobile" name="mobile" placeholder="Mobile..."><br/>
+                  <input type="reset" value="Reset">
+                  <input type="submit" value="Signup">
+                  
                 </fieldset>
             </form>
         </center>

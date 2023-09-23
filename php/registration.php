@@ -16,9 +16,9 @@
     <body>
         <div id="includeHeader"></div>
         <div id="commonMenu"></div>
-
-        <div class="frame1">
-            <form action="reg_insert.php" method="post">
+        <center>
+        <div class="frame1 center">
+            <form action="reg_insert.php" method="post" class="feedback-form">
             <fieldset>
             <legend>Registration</legend>
             <label for="Name">Name:</label>
@@ -47,10 +47,10 @@
             <br/>
             <input type="reset" value="Reset">
             <input type="submit" value="Submit">
-        </fieldset>
-                </form>
-            </div>
+            </fieldset>
+            </form>
         </div>
+    </center>
         <div id="includeFooter"></div>
     </body>
 </html>

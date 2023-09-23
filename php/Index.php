@@ -23,8 +23,8 @@
         <h1>WHAT'S POPULAR IN CARS</h1>
     </center>
     <div class="image">
-        <img src="../image/cars/infinity.jpg" style=" width: 49%; float: left; height: 500px; margin-left:  10px;">
-        <img src="../image/cars/nissan3.jpg" style=" width: 49%; float: right; height: 500px; margin-right:  10px; ">
+        <img src="../image/cars/McLaren1.jpg" style=" width: 49%; float: left; height: 500px; margin-left:  10px;">
+        <img src="../image/cars/McLaren2.jpg" style=" width: 49%; float: right; height: 500px; margin-right:  10px; ">
         <h3 class="description">Performance cars aren't all about engine noise, exhaust fumes,
             and squealing tires.
         </h3>

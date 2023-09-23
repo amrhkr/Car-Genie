@@ -24,10 +24,10 @@
         </center>
         <div class="image">
             <img
-                src="../image/cars/audi.jpg"
+                src="../image/cars/McLaren3.jpg"
                 style="width: 49%; float: left; height: 500px; margin-left: 10px" />
             <img
-                src="../image/cars/bmw.jpg"
+                src="../image/cars/mclaren5.png"
                 style="width: 49%; float: right; height: 500px; margin-right: 10px" />
 
             <h3 class="description">

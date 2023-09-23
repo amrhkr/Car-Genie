@@ -27,9 +27,9 @@
 
                   <label for="password">PASSWORD:</label>
                   <input type="password" id="password" name="password" placeholder="Password..." required><br><br>
-
+                  <input type="reset" class="center-content" value="Reset">
                   <input type="submit" value="Log In" onclick="alert('Login successful')">
-                  <input type="reset" value="Reset">
+                  
                 </fieldset>
             </form>
         </center>
