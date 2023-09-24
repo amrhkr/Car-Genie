@@ -1,33 +1,54 @@
 <?php
-    session_start();
     include("conn.php");
-    $admin="SELECT * FROM admin";
-    $adminData=$conn->query($admin);
-    $adminCollection=$adminData->fetch_assoc();
+    $userid=$_POST["userid"];
+    $admin_id = "select * from admin where Login_ID='$userid'";
+    $qst_admin_id=$conn->query($admin_id);
+    if ($qst_admin_id->num_rows>0) {
+    $clct_admin_id=$qst_admin_id->fetch_assoc();
+    $admin_login_id=$clct_admin_id['Login_ID'];
+    $admin_pwd=$clct_admin_id['Admin_Pwd'];
+     $_SESSION['admin_id'] = $admin_login_id;
+     $_SESSION['admin_pw']=$admin_pwd;
     
-    $Login_ID=$adminCollection['Login_ID'];
-    $Admin_Name=$adminCollection['Admin_Name'];
-    $Admin_pwd=$adminCollection['Admin_pwd'];
-    $Admin_phone=$adminCollection['Admin_phone']; 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/home.css" type="text/css" />
+    
     <title>Welcome <?php echo $Admin_Name ?></title>
+    <script>
+        function performRedirect() {
+            setTimeout(function() {
+                window.location.href = "admin_home.php";
+            }, 5000);
+        }
+        window.onload = function() {
+            performRedirect();
+        };
+    </script>
 </head>
 <body>
     <div class="modal-body">
-        <p style="font-size: 50px;font-weight: bold;color: #e70b3e;text-align: center;">
-            LOGGED-IN SUCCESSFULLY</p>
+        <p style="font-size:50px;font-weight:bold;color:#e70b3e;text-align:center;">LOGGED-IN SUCCESSFULLY</p>
         <h1 align="center"><img src="../image/success.svg" width="70px" height="120px" /></h1>
     </div>
     <div class="modal-footer">
-        <center><a href="admin_home.php" class="btn btn-primary" style="width: 100%; height: 100px;font-weight: bold;font-size: 50px; text-decoration: none;" target="_blank">GO TO ADMIN
-            PANNEL</a></center>
+        <center><a href="admin_home.php" class="btn btn-primary"
+        style="width: 100%;  height: 100px;font-weight: bold;font-size: 50px; text-decoration: none;" target="_blank">Admin Panel</a>
+        </center>
+    </div>
+    <div class="modal-footer">
+        <center>
+            <h2><b>Redirecting... Please wait</b></h2>
+        </center>
     </div>
 </body>
 </html>
+
+<?php } else {  ?>
+    <h1>User Details Not Found</h1>
+    <p>We couldn't find the user details you requested.</p>
+    <p>Please make sure the information is correct or contact support for assistance.</p>
+<?php } ?>

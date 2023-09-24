@@ -1,3 +1,4 @@
+<?php include("header.php"); ?>
 <html>
 
 <head>
@@ -19,7 +20,7 @@
     <div id="commonMenu"></div>
     <div class="frame2">
         <center>
-            <form name="login" method="post" action="admin_login_process.php">
+            <form name="login" method="post" action="admin_login_insert.php">
                 <fieldset>
                   <legend>ADMIN LOGIN</legend>
                   <label for="adminId">ADMIN ID:</label>
@@ -28,7 +29,7 @@
                   <label for="password">PASSWORD:</label>
                   <input type="password" id="password" name="password" placeholder="Password..." required><br><br>
                   <input type="reset" class="center-content" value="Reset">
-                  <input type="submit" value="Log In" onclick="alert('Login successful')">
+                  <input type="submit" value="Log In">
                   
                 </fieldset>
             </form>

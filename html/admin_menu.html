@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body>
+    <div id="menu">
+        <center>
+            <a href="admin_home.php">Home</a>
+            <a href="admin_order.php">Order Details</a>
+            <a href="admin_product.php">Add Cars</a>
+            <a href="Admin_payment_view.php">View Payment</a>
+            <!-- <a href="Invoice.php">Invoice</a> -->
+        </center>
+    </div>
+</body>
+</html>
+
+<script>
+
+    $(document).ready(function(){
+        $('#CarCat').on('change', function() {
+          var host = window.location.host;
+          window.location =$(this).find(":selected").val()
+});
+    })
+</script>

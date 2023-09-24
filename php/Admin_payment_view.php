@@ -1,10 +1,10 @@
-<?php
-session_start(); include('conn.php');  date_default_timezone_set("Asia/Kolkata");
+<?php include('conn.php');  date_default_timezone_set("Asia/Kolkata");
 $cur_dt_dmy=date("d-m-Y"); $cur_time=date("H:i:s");
 $cur_dt_ymd=date("Y-m-d");
-
+#include("header.php");
 //Please Do not touch this code End
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,15 +15,7 @@ $cur_dt_ymd=date("Y-m-d");
     <title>ADMIN PANNEL</title>
 
     <!-- Favicon and touch icons -->
-    <link rel="stylesheet" href="home.css" type="text/css" />
-    <link href="<?php echo $dp_fcn?>" sizes="128x128" rel="shortcut icon" type="image/x-  icon" />
-
-    <!--Dont Movable start-->
-    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/themify-icons/themify-icons.css" rel="stylesheet" type="text/css" />
-
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> <!--Dont Movable END-->
-    <!--------Please Do not touch this code End---------------->
+    <link rel="stylesheet" href="../css/home.css" type="text/css" />
 </head>
 
 <body class="hold-transition sidebar-mini">

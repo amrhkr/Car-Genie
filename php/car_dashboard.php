@@ -1,5 +1,4 @@
-<?php
-session_start(); include('conn.php');  date_default_timezone_set("Asia/Kolkata");
+<?php include('conn.php');  date_default_timezone_set("Asia/Kolkata");
 $cur_dt_dmy=date("d-m-Y"); $cur_time=date("H:i:s");
 $cur_dt_ymd=date("Y-m-d");
 //Please Do not touch this code End

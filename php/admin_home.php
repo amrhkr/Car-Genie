@@ -1,9 +1,6 @@
-<?php
-session_start(); include('conn.php');  date_default_timezone_set("Asia/Kolkata");
+<?php include('conn.php');  date_default_timezone_set("Asia/Kolkata");
 $cur_dt_dmy=date("d-m-Y"); $cur_time=date("H:i:s");
 $cur_dt_ymd=date("Y-m-d");
-
-//Please Do not touch this code End
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,7 +11,7 @@ $cur_dt_ymd=date("Y-m-d");
     <title>ADMIN PANNEL</title>
     <!-- Favicon and touch icons -->
     <link rel="stylesheet" href="../css/home.css" type="text/css" />
-    <link href="<?php	echo $dp_fcn?>" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
+    <link href="<? php	echo $dp_fcn?>" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
     <!--Dont Movable start-->
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/themify-icons/themify-icons.css" rel="stylesheet" type="text/css" />
@@ -51,7 +48,7 @@ $cur_dt_ymd=date("Y-m-d");
             <a href="admin_home.php">Home</a>
             <a href="admin_order.php">Order Details</a>
             <a href="admin_product.php">Add Cars</a>
-            <a href="admin_payment.php">View Payment</a>
+            <a href="Admin_payment_view.php">View Payment</a>
             <!-- <a href="Invoice.php">Invoice</a> -->
         </center>
     </div>

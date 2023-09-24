@@ -1,6 +1,6 @@
-<?php include("conn.php"); session_start();
+<?php include("conn.php");
 ?>
-
+<?php include("header.php"); ?>
 <html>
 
 <head>
@@ -23,44 +23,21 @@
     <div class="product-item">
         <div class="item">
             <h1>Camper Van</h1>
-            <a href="payment.php"><img src="../image/cars/campervan/camper1.jpg" onmouseover="this.style.cursor='pointer';" title="Click to Buy" /></a><br><br>
+            <a href="payment.php"><img src="../image/cars/campervan/camper1.png" onmouseover="this.style.cursor='pointer';" title="Click to Buy" /></a><br><br>
             <h3>Campervan 2023 Model<br> Price: &#8377 500000<br>
                 <input type='button' value='Buy Now' onclick="location.href='payment.php'" onmouseover="this.style.cursor='pointer';" />
             </h3>
         </div>
         <div class="item">
             <h1>Camper Van</h1>
-            <a href="payment.php"><img src="../image/cars/campervan/camper2.jpg" onmouseover="this.style.cursor='pointer';" title="Click to Buy" /></a><br><br>
+            <a href="payment.php"><img src="../image/cars/campervan/camper2.png" onmouseover="this.style.cursor='pointer';" title="Click to Buy" /></a><br><br>
             <h3>Campervan 2023 Model<br> Price: &#8377 500000<br>
                 <input type='button' value='Buy Now' onclick="location.href='payment.php'" onmouseover="this.style.cursor='pointer';" />
             </h3>
         </div>
         <div class="item">
             <h1>Camper Van</h1>
-            <a href="payment.php"><img src="../image/cars/campervan/camper3.jpg" onmouseover="this.style.cursor='pointer';" title="Click to Buy" /></a><br><br>
-            <h3>Campervan 2023 Model<br> Price: &#8377 500000<br>
-                <input type='button' value='Buy Now' onclick="location.href='payment.php'" onmouseover="this.style.cursor='pointer';" />
-            </h3>
-        </div>
-    </div>
-    <div class="product-item">
-        <div class="item">
-            <h1>Camper Van</h1>
-            <a href="payment.php"><img src="../image/cars/campervan/camper4.jpg" onmouseover="this.style.cursor='pointer';" title="Click to Buy" /></a><br><br>
-            <h3>Campervan 2023 Model<br> Price: &#8377 500000<br>
-                <input type='button' value='Buy Now' onclick="location.href='payment.php'" onmouseover="this.style.cursor='pointer';" />
-            </h3>
-        </div>
-        <div class="item">
-            <h1>Camper Van</h1>
-            <a href="payment.php"><img src="../image/cars/campervan/camper5.jpg" onmouseover="this.style.cursor='pointer';" title="Click to Buy" /></a><br><br>
-            <h3>Campervan 2023 Model<br> Price: &#8377 500000<br>
-                <input type='button' value='Buy Now' onclick="location.href='payment.php'" onmouseover="this.style.cursor='pointer';" />
-            </h3>
-        </div>
-        <div class="item">
-            <h1>Camper Van</h1>
-            <a href="payment.php"><img src="../image/cars/campervan/camper6.jpg" onmouseover="this.style.cursor='pointer';" title="Click to Buy" /></a><br><br>
+            <a href="payment.php"><img src="../image/cars/campervan/camper3.png" onmouseover="this.style.cursor='pointer';" title="Click to Buy" /></a><br><br>
             <h3>Campervan 2023 Model<br> Price: &#8377 500000<br>
                 <input type='button' value='Buy Now' onclick="location.href='payment.php'" onmouseover="this.style.cursor='pointer';" />
             </h3>
@@ -69,21 +46,44 @@
     <div class="product-item">
         <div class="item">
             <h1>Camper Van</h1>
-            <a href="payment.php"><img src="../image/cars/campervan/camper5.jpg" onmouseover="this.style.cursor='pointer';" title="Click to Buy" /></a><br><br>
+            <a href="payment.php"><img src="../image/cars/campervan/camper4.png" onmouseover="this.style.cursor='pointer';" title="Click to Buy" /></a><br><br>
             <h3>Campervan 2023 Model<br> Price: &#8377 500000<br>
                 <input type='button' value='Buy Now' onclick="location.href='payment.php'" onmouseover="this.style.cursor='pointer';" />
             </h3>
         </div>
         <div class="item">
             <h1>Camper Van</h1>
-            <a href="payment.php"><img src="../image/cars/campervan/camper1.jpg" onmouseover="this.style.cursor='pointer';" title="Click to Buy" /></a><br><br>
+            <a href="payment.php"><img src="../image/cars/campervan/camper5.png" onmouseover="this.style.cursor='pointer';" title="Click to Buy" /></a><br><br>
             <h3>Campervan 2023 Model<br> Price: &#8377 500000<br>
                 <input type='button' value='Buy Now' onclick="location.href='payment.php'" onmouseover="this.style.cursor='pointer';" />
             </h3>
         </div>
         <div class="item">
             <h1>Camper Van</h1>
-            <a href="payment.php"><img src="../image/cars/campervan/camper3.jpg" onmouseover="this.style.cursor='pointer';" title="Click to Buy" /></a><br><br>
+            <a href="payment.php"><img src="../image/cars/campervan/camper6.png" onmouseover="this.style.cursor='pointer';" title="Click to Buy" /></a><br><br>
+            <h3>Campervan 2023 Model<br> Price: &#8377 500000<br>
+                <input type='button' value='Buy Now' onclick="location.href='payment.php'" onmouseover="this.style.cursor='pointer';" />
+            </h3>
+        </div>
+    </div>
+    <div class="product-item">
+        <div class="item">
+            <h1>Camper Van</h1>
+            <a href="payment.php"><img src="../image/cars/campervan/camper7.png" onmouseover="this.style.cursor='pointer';" title="Click to Buy" /></a><br><br>
+            <h3>Campervan 2023 Model<br> Price: &#8377 500000<br>
+                <input type='button' value='Buy Now' onclick="location.href='payment.php'" onmouseover="this.style.cursor='pointer';" />
+            </h3>
+        </div>
+        <div class="item">
+            <h1>Camper Van</h1>
+            <a href="payment.php"><img src="../image/cars/campervan/camper8.png" onmouseover="this.style.cursor='pointer';" title="Click to Buy" /></a><br><br>
+            <h3>Campervan 2023 Model<br> Price: &#8377 500000<br>
+                <input type='button' value='Buy Now' onclick="location.href='payment.php'" onmouseover="this.style.cursor='pointer';" />
+            </h3>
+        </div>
+        <div class="item">
+            <h1>Camper Van</h1>
+            <a href="payment.php"><img src="../image/cars/campervan/camper9.png" onmouseover="this.style.cursor='pointer';" title="Click to Buy" /></a><br><br>
             <h3>Campervan 2023 Model<br> Price: &#8377 500000<br>
                 <input type='button' value='Buy Now' onclick="location.href='payment.php'" onmouseover="this.style.cursor='pointer';" />
             </h3>

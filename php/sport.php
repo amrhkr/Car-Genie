@@ -1,5 +1,6 @@
-<?php include("conn.php"); session_start();
+<?php include("conn.php");
 ?>
+<?php include("header.php"); ?>
 
 <html>
 

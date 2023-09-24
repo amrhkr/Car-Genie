@@ -1,3 +1,4 @@
+<?php include("header.php"); ?>
 <html>
     <head>
         <title>CAR GENIE - Home</title>
@@ -22,9 +23,9 @@
                     <fieldset>
                         <legend>LOGIN</legend>
                         <label for="Name">User ID:</label>
-                        <input type="text" name="cus_email" id="Name" required>
+                        <input type="text" name="cus_email" id="Name" placeholder="Enter email..." required>
                         <label for="Password">Password:</label>
-                        <input type="password" name="cus_pwd" id="Password" required><br />
+                        <input type="password" name="cus_pwd" id="Password" placeholder="Enter Password..." required><br />
                         <input type="reset" value="Reset">
                         <input type="submit" value="Submit">
                     </fieldset>
