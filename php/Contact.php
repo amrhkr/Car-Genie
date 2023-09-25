@@ -18,7 +18,8 @@
 
 <body>
     <div id="includeHeader"></div>
-    <div id="commonMenu"></div>
+    <!-- <div id="commonMenu"></div> -->
+    <?php include 'menu.php'; ?>
     <div class="frame center">
         <form id="contact" class="center-content">
             <h1>CONTACT US</h1>

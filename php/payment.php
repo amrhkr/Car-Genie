@@ -21,7 +21,8 @@
 <body>
     <div id="includeHeader"></div>
     <div id="commonMenu"></div>
-    <center>
+    <?php include 'menu.php'; ?>
+    <center class="pbgi">
     <div class="payment">
             <form action="accept_payment.php" method="post" >
                 <fieldset>

@@ -17,7 +17,8 @@
 
 <body>
     <div id="includeHeader"></div>
-    <div id="commonMenu"></div>
+    <!-- <div id="commonMenu"></div> -->
+    <?php include 'menu.php'; ?>
     <div class="frame1 center">
         <center>
             <form name="signup" method="post" action="admin_insert.php" class="feedback-form">

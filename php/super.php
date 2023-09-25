@@ -21,6 +21,7 @@
 <body>
     <div id="includeHeader"></div>
     <div id="commonMenu"></div>
+    <?php include 'menu.php'; ?>
     <div class="product-item">
         <div class="item">
             <h1>Super Car</h1>

@@ -1,4 +1,6 @@
-<?php include("header.php"); ?>
+<?php include("header.php");
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -20,6 +22,7 @@
 <body>
     <div id="includeHeader"></div>
     <div id="commonMenu"></div>
+    <?php include 'menu.php'; ?>
     <center>
         <h1>WHAT'S POPULAR IN CARS</h1>
     </center>

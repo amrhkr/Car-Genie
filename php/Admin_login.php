@@ -17,7 +17,8 @@
 
 <body>
     <div id="includeHeader"></div>   
-    <div id="commonMenu"></div>
+    <!-- <div id="commonMenu"></div> -->
+    <?php include 'menu.php'; ?>
     <div class="frame2">
         <center>
             <form name="login" method="post" action="admin_login_insert.php">

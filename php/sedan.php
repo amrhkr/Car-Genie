@@ -69,6 +69,7 @@ $('body').bind('click', function(e){
 
     <div id="includeHeader"></div>
     <div id="commonMenu"></div>
+    <?php include 'menu.php'; ?>
     <div class="product-item">
         <div class="item">
             <h1>Sedan</h1>

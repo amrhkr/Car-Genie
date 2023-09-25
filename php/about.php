@@ -18,7 +18,8 @@
     <body>
         <div id="includeHeader"></div>
 
-        <div id="commonMenu"></div>
+        <!-- <div id="commonMenu"></div> -->
+        <?php include 'menu.php'; ?>
 
         <center>
             <h1>WHATS'S POPULAR IN CARS</h1>

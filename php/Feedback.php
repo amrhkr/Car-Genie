@@ -18,8 +18,9 @@
 </head>
 
 <body>
-    <div id="includeHeader"></div>
-    <div id="commonMenu"></div>
+    <!-- <div id="includeHeader"></div> -->
+    <!-- <div id="commonMenu"></div> -->
+    <?php include 'menu.php'; ?>
     <center>
         <div class="frame1 center">
             <form action="fed_bck_sts.php" method="post" class="feedback-form">
@@ -28,27 +29,22 @@
         
                     <div class="form-group">
                         <label for="Name">Name:</label>
-                        <input type="text" name="cus_nme" id="Name" required>
+                        <input type="text" name="cus_nme" id="Name" placeholder="Enter Your Name..." required>
                     </div>
         
                     <div class="form-group">
                         <label for="VehicleId">Vehicle ID:</label>
-                        <input type="text" name="vcli_id" id="VehicleId" required>
+                        <input type="text" name="vcli_id" id="VehicleId" placeholder="Enter Vehile Id..." required>
                     </div>
         
                     <div class="form-group">
                         <label for="FeedDetails">Feed Details:</label>
-                        <input type="text" name="detls" id="FeedDetails" required>
+                        <input type="text" name="detls" id="FeedDetails" placeholder="Enter Details..." required>
                     </div>
         
                     <div class="form-group">
                         <label for="Response">Response:</label>
-                        <input type="text" name="respns" id="Response">
-                    </div>
-        
-                    <div class="form-group">
-                        <label for="FeedbackStatus">Feedback Status:</label>
-                        <input type="text" name="sts" id="FeedbackStatus">
+                        <input type="text" name="respns" placeholder="Enter Your Response..." id="Response">
                     </div>
                     <input type="reset" value="RESET" class="btn-reset">
                     <input type="submit" value="SUBMIT" class="btn-submit">

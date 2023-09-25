@@ -16,6 +16,7 @@
     <body>
         <div id="includeHeader"></div>
         <div id="commonMenu"></div>
+        <?php include 'menu.php'; ?>
         <center>
             <div class="frame1 center">
                 <form name="login" method="post" action="login_select.php"
