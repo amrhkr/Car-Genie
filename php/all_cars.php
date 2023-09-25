@@ -24,7 +24,7 @@
     <!-- <div id="includeHeader"></div>
     
     <div id="commonMenu"></div> -->
-    <?php include 'menu.php'; ?>
+    <?php #require_once 'menu.php'; ?>
 
     <?php include 'campervan.php'; ?>
     <?php include 'pickup.php'; ?>

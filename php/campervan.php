@@ -1,6 +1,6 @@
 <?php include("conn.php");
 ?>
-<?php include("header.php"); ?>
+<?php require_once("header.php"); ?>
 <html>
 
 <head>
@@ -20,7 +20,7 @@
 <body>
     <div id="includeHeader"></div>
     <!-- <div id="commonMenu"></div> -->
-    <?php include 'menu.php'; ?>
+    <?php require_once 'menu.php'; ?>
     <div class="product-item">
         <div class="item">
             <h1>Camper Van</h1>
