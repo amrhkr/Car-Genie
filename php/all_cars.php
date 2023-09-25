@@ -12,8 +12,6 @@
             console.log(window.location.pathname.indexOf('campervan.php'));
             console.log(window.location.pathname);
             if (window.location.pathname.indexOf('campervan.php') === -1 && window.location.pathname.indexOf('pickup.php') === -1) {
-            // Hide the header and footer here using JavaScript
-            // $("#includeHeader").hide();
             $("#includeFooter").hide();
             }
         });
@@ -21,17 +19,12 @@
 </head>
 
 <body>
-    <!-- <div id="includeHeader"></div>
-    
-    <div id="commonMenu"></div> -->
-    <?php #require_once 'menu.php'; ?>
-
-    <?php include 'campervan.php'; ?>
-    <?php include 'pickup.php'; ?>
-    <?php include 'roadster.php'; ?>
-    <?php include 'sedan.php'; ?>
     <?php include 'sport.php'; ?>
     <?php include 'super.php'; ?>
+    <?php include 'roadster.php'; ?>
+    <?php include 'sedan.php'; ?>
+    <?php include 'campervan.php'; ?>
+    <?php include 'pickup.php'; ?>
     <?php include 'suv.php'; ?>
     <?php include '../html/footer.html'; ?>
 </body>

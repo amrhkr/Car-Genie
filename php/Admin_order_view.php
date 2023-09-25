@@ -10,7 +10,7 @@ $cur_dt_ymd=date("Y-m-d");
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>ADMIN PANNEL</title>
+        <title>CAR GENIE: Admin Panel</title>
 
         <!-- Favicon and touch icons -->
         <link rel="stylesheet" href="home.css" type="text/css" />
@@ -27,30 +27,8 @@ $cur_dt_ymd=date("Y-m-d");
             type="text/css" /> <!--Dont Movable END-->
     </head>
     <body class="hold-transition sidebar-mini">
-        <div class="top">
-            <div class="left">
-                <h2>Admin panel</h2>
-            </div>
-            <div class="right">
-                <h5>
-                    <a href="Login.php">Logout</a>
-                </h5>
-            </div>
-        </div>
-        <div class="logo">
-            <div class="left">
-                <h1>CAR GENIE</h1>
-            </div>
-            <div class="right"></div>
-        </div>
-        <div id="menu">
-            <center>
-                <a href="admin_home.php">Home</a>
-                <a href="admin_order_view.php">Order Details</a>
-                <a href="admin_cars_add.php">Add Cars</a>
-                <a href="admin_payment_view.php">View Payment</a>
-            </center>
-        </div>
+    <?php include 'admin_header.php'; ?>
+    <?php include 'admin_menu.php'; ?>
         <div id="preloader">
             <div id="status"></div>
         </div>
@@ -158,6 +136,7 @@ $cur_dt_ymd=date("Y-m-d");
                 </section>
             </div>
         </div>
+        <?php include 'admin_footer.php'; ?>
         <!-- Start Core Plugins =====================================================================-->
         <!-- jQuery -->
         <script

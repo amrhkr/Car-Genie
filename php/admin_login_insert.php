@@ -7,8 +7,10 @@
     $clct_admin_id=$qst_admin_id->fetch_assoc();
     $admin_login_id=$clct_admin_id['Login_ID'];
     $admin_pwd=$clct_admin_id['Admin_Pwd'];
-     $_SESSION['admin_id'] = $admin_login_id;
-     $_SESSION['admin_pw']=$admin_pwd;
+    $Admin_Name=$clct_admin_id['Admin_Name'];
+    $_SESSION['admin_id'] = $admin_login_id;
+    $_SESSION['admin_pw'] = $admin_pwd;
+    $_SESSION['admin_name'] = $Admin_Name;
     
 ?>
 <!DOCTYPE html>
@@ -22,7 +24,7 @@
         function performRedirect() {
             setTimeout(function() {
                 window.location.href = "admin_home.php";
-            }, 5000);
+            }, 2000);
         }
         window.onload = function() {
             performRedirect();

@@ -34,6 +34,7 @@
         </h3>
         <h3 class="description"> Engine Tweaks Pump Up Horsepower </h3>
     </div>
-    <div id="includeFooter"></div>
+    <!-- <div id="includeFooter"></div> -->
+    <?php include 'footer.php'; ?>
     </body>
 </html>

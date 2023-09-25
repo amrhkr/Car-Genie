@@ -39,11 +39,9 @@
                   <input type="submit" value="Signup">
                   
                 </fieldset>
+                <h4>Already a Member? <a href="admin_login.php">Log In</a></h4>
             </form>
         </center>
-    </div>
-    <div>
-        <a href="admin_login.php">LogIn</a>
     </div>
     <div id="includeFooter"></div>
 </body>

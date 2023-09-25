@@ -11,10 +11,10 @@
         </div>
         <div class="right">
             <h5>
-                <a href="registration.php" title="Create an account, it's Free!">CreateAccount</a>
                 <?php  if (isset($_SESSION['email'])){
                     ?> <a href="logout.php" title="Log Out">Logout</a>;
                 <?php }  else { ?>
+                    <a href="registration.php" title="Create an account, it's Free!">CreateAccount</a>
                     <a href="login.php" title="Log In">Login</a>;
                 <?php } ?>
             </h5>

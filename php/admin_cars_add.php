@@ -7,28 +7,8 @@
     </head>
 
 <body>
-    <div class="top">
-        <div class="left">
-            <h2 style="text-align:center;">Admin Panel</h2>
-        </div>
-        <div class="right">
-            <h5>
-                <a href="login.php">Logout</a>
-            </h5>
-        </div>
-    </div>
-    <div id="includeHeader"></div>
-    </div>
-
-
-    <div id="menu">
-        <center>
-            <a href="admin_home.php">Home</a>
-            <a href="admin_order_view.php">Order Details</a>
-            <a href="admin_cars_add.php">Add Cars</a>
-            <a href="admin_payment_view.php">View Payment</a>
-        </center>
-    </div>
+    <?php include 'admin_header.php'; ?>
+    <?php include 'admin_menu.php'; ?>
     <div class="pick">
         <div class="frame2">
             <center>
@@ -45,7 +25,7 @@
             </center>
         </div>
     </div>
-    <div id="includeAdminFooter"></div>
+    <?php include 'admin_footer.php' ?>
 
 </body>
 

@@ -65,8 +65,7 @@ body {
     color: black;
     padding-top: 50px;
     font-weight: bold;
-    width: 600px;
-    margin-left: 950px;
+    margin-left: 80%;
 }
 
 #menu {
@@ -170,7 +169,7 @@ body {
 .frame1 {
     background-image: url('../image/cars/McLaren2.jpg');
     background-size: cover;
-    width: 100%;
+    /* width: 100%; */
     padding: 10px;
     font-size: 30px;
 }
@@ -810,7 +809,7 @@ input[type="text"] {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* This centers the content vertically within the viewport */
+    /* height: 100vh; */
     background-color: rgba(0, 0, 0, 0.8); /* Add background color */
     padding: 20px;
     color: #99ff99;
@@ -1062,4 +1061,48 @@ input[type="text"] {
     height: 800px;
     width: 100%;
     padding-top: 50px;
+}
+
+/* ----------------------------------------ADMIN---------------------------------------------- */
+.admintablesrn {
+    font-weight: 900; 
+    color: red; 
+    font-size: 25px;
+}
+
+.admintable {
+    font-weight: 900; 
+    color: rgb(253, 253, 253); 
+    font-size: 25px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../image/adminHome.jpg');
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.table {
+    width: 80%;
+    background-color: #000;
+    opacity: 0.8;
+}
+
+.info {
+    color: #ffffff;
+    text-shadow: 2px 2px 2px red;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.datainfo {
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px rgb(177, 121, 0);
 }
