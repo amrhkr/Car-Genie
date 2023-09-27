@@ -24,7 +24,7 @@
     
     <div class="container">
     <center>
-        <h1 class="admintitle">PAYMENT DETAILS</h1>
+        <h1 class="admintitle">FEED-BACK DETAILS</h1>
     </center>
         <table class="table table-bordered table-striped table-hover" border="1">
             <thead>
@@ -32,64 +32,46 @@
                     <th>SR. NO.</th>
                     <th>CUSTOMER ID</th>
                     <th>VEHICLE ID</th>
-                    <th>VEHICLE NAME</th>
-                    <th>PAID VIA</th>
-                    <th>AMOUNT</th>
-                    <th>PURCHASE DATE-TIME</th>
-                    <th>QUANTITY</th>
-                    <th>ADDRESS</th>
-                    <th>CARD NUMBER</th>
+                    <th>CUSTOMER NAME</th>
+                    <th>FEED-BACK DETAILS</th>
+                    <th>FEED-BACK RESPONSE</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
-                    $pay_data = "SELECT * FROM `payment_info` WHERE Purchase_ID > 0";
-                    $result=$conn->query($pay_data);
+                    $admin_data = "SELECT * FROM `feedback` WHERE Feed_ID > 0";
+                    $result=$conn->query($admin_data);
                 ?>
                 <?php $counter=1;
                     while ($row = mysqli_fetch_array($result)){
-                        $paymentData[] = array(
+                        $adminData[] = array(
                             'Cus_Id' =>$row['Cus_Id'],
-                            'card_no' => $row['card_no'],
-                            'paymode' => $row['paymode'],
                             'Vehicle_Id' => $row['Vehicle_Id'],
-                            'Delivery_Add' => $row['Delivery_Add'],
-                            'Purchase_Date' => $row['Purchase_Date'],
-                            'Purchase_Time' => $row['Purchase_Time'],
-                            'Purchase_Price' => $row['Purchase_Price'],
-                            'PurVehicle_Name' => $row['PurVehicle_Name'],
-                            'Purchase_Quantity' => $row['Purchase_Quantity'],
+                            'Feed_Details' => $row['Feed_Details'],
+                            'customer_name' => $row['customer_name'],
+                            'Feed_Response' => $row['Feed_Response']
                         );
                     }
                 ?>
-                <?php foreach ($paymentData as $payment){ ?>
+                <?php foreach ($adminData as $admin){ ?>
                 <tr class="datainfo">
                     <td class="admintablesrn">
                         <?php echo $counter++;?>
                     </td>
                     <td class="admintable">
-                        <?php echo $payment['Cus_Id']; ?>
+                        <?php echo $admin['Cus_Id']; ?>
                     </td>
                     <td class="admintable">
-                        <?php echo $payment['Vehicle_Id']; ?>
+                        <?php echo $admin['Vehicle_Id']; ?>
                     </td>
                     <td class="admintable">
-                        <?php echo $payment['PurVehicle_Name']; ?>
+                        <?php echo $admin['customer_name']; ?>
                     </td>
                     <td class="admintable">
-                        <?php echo $payment['paymode']; ?>
+                        <?php echo $admin['Feed_Details']; ?>
                     </td>
                     <td class="admintable">
-                        <?php echo $payment['Purchase_Price']; ?>
-                    </td>
-                    <td class="admintable">
-                        <?php echo $payment['Purchase_Date'].'/'.$payment['Purchase_Time']; ?>
-                    </td>
-                    <td class="admintable">
-                        <?php echo $payment['Purchase_Quantity']; ?>
-                    </td>
-                    <td class="admintable">
-                        <?php echo $payment['card_no']; ?>
+                        <?php echo $admin['Feed_Response']; ?>
                     </td>
                 </tr>
                 <?php } ?>

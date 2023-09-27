@@ -1,34 +1,68 @@
 <?php
-session_start(); include("conn.php"); date_default_timezone_set("Asia/Kolkata");
-$cur_dt_dmy=date("d-m-Y"); $cur_tm=date("H:i:s"); $cur_dt_ymd=date("Y-m-d");
-include("conn.php");
+    include("conn.php");
+    session_start(); 
+    date_default_timezone_set("Asia/Kolkata");
+    $pur_time = date("H:i:s"); 
+    $pur_date = date("Y-m-d");
+    $cus_email = $_SESSION['cus_email'];
+    $cus_name = $_SESSION['cus_name'];
+    $customer = "SELECT * FROM customer WHERE Email_ID='$cus_email'";
+    
+    $customer=$conn->query($customer);
+    $clct_customer=$customer->fetch_assoc();
+    $Cus_id = $clct_customer['Cus_id'];
+    $Vehicle_Id = $_POST["Vehicle_Id"];
+    $PurVehicle_Name = $_POST["PurVehicle_Name"];
+    $paymode = $_POST["paymode"];
+    $Purchase_Price = $_POST["Purchase_Price"];
+    $Purchase_Quantity = $_POST["Purchase_Quantity"];
+    $Delivery_Add=$_POST["Delivery_Add"];
+    $card_no = $_POST["card_no"];
 
-$cus_id="select * from customer where Cus_id='$cus_nm'";
-$qst_cus_id=$conn->query($cus_id);
-$clct_cus_id=$qst_cus_id->fetch_assoc();
-
-$cstm_id=$clct_cus_id['Cus_id'];
-$crd_no=$_POST["crd_num"];
-$adrs=$_POST["addrs"];
-$puchse_pric=$_POST["amt"];
-$vchle_id=$_POST["vchl_id"];
-$cus_mbl=$_POST["pay"];
-$vchle_nme=$_POST["vchl_nme"];
-$purchse_qunty=$_POST["purch_qunt"];
-$ad_quz="insert into payment_info set card_no ='$crd_no', address='$adrs',
-cus_id='$cstm_id', purchase_price='$puchse_pric', purchase_date='$cur_dt_ymd',
-purchase_Quantity='$purchse_qunty',
-vehicle_id='$vchle_id', vehicle_Name='$vchle_nme', purchase_time='$cur_tm'";
-$quz_id=mysqli_query($conn,$ad_quz);
+    $insertPayment="INSERT INTO payment_info set `Cus_id` ='$Cus_id', 
+            `Vehicle_Id` ='$Vehicle_Id', `Purchase_Price` ='$Purchase_Price',
+            `Purchase_Date` ='$pur_date', `Purchase_Time` ='$pur_time', 
+            `Purchase_Quantity` ='$Purchase_Quantity', `Delivery_Add` ='$Delivery_Add', 
+            `card_no` ='$card_no'";
+            echo $insertPayment;
+    $quz_id=mysqli_query($conn, $insertPayment);
+    if($quz_id->num_rows>0) {
 ?>
 
-<div class="modal-body">
-    <p
-        style="font-size: 50px;font-weight: bold;color: #e70b3e;text-align: center;">YOUR
-        PAYMENT IS SUCCESSFULL</p> <center><img src="image/sussfull.png"></center>
-</div>
-<div class="modal-footer">
-    <center><a href="all_cars_ctgry.php" class="btn btn-primary"
-            style="width: 100%;  height: 100px;font-weight: bold;font-size: 50px;"
-            target="_blank">VIWS RECEIPT</a></center>
-</div>
+<DOCTYPE html>
+<head>
+<script src="../jQuery/jqueryfile.js"></script>
+<script>
+    function performRedirect() {
+        setTimeout(function() {
+            window.location.href = "all_cars.php";
+        }, 2000);
+    }
+    window.onload = function() {
+        performRedirect();
+    };
+</script>
+</head>
+<body>
+    <div class="modal-body">
+        <p style="font-size:50px;font-weight:bold;color:#e70b3e;text-align:center;">YOUR PAYMENT IS SUCCESSFULL</p>
+        <h1 align="center"><img src="../image/success.svg" width="70px" height="120px" /></h1>
+    </div>
+    <div class="modal-footer">
+        <center><a href="all_cars.php" class="btn btn-primary"
+        style="width: 100%;  height: 100px;font-weight: bold;font-size: 50px; text-decoration: none;" target="_blank">VIEW MORE CARS</a>
+        </center>
+    </div>
+    <div class="modal-footer">
+        <center>
+            <h2><b>Redirecting... Please wait</b></h2>
+        </center>
+    </div>
+</body>
+</html>
+
+<?php } else {  ?>
+    <h1>User Details Not Found</h1>
+    <p>We couldn't find the user details you requested.</p>
+    <p>Please make sure the information is correct or contact support for assistance.</p>
+<?php } ?>

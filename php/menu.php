@@ -11,7 +11,7 @@
         <a href="about.php">ABOUT US</a>
         <a href="is_logged_in.php" >All CARS</a>
         
-        <?php  if (isset($_SESSION['email'])){ ?> 
+        <?php  if (isset($_SESSION['cus_email'])){ ?> 
                     <select id="CarCat">
                         <option selected >CARS CATEGORY</option>
                         <option value="campervan.php">Campervan</option>
@@ -22,10 +22,11 @@
                         <option value="super.php">Super Car</option>
                         <option value="suv.php">SUV</option>
                     </select>;
+                    <a href="feedback.php">FEED BACK</a>
             <?php } ?>
 
         <a href="contact.php">CONTACT US</a>
-        <a href="feedback.php">FEED BACK</a>
+        
     </div>
 </body>
 </html>

@@ -1,5 +1,4 @@
-<?php include("conn.php");
-?>
+<?php include("conn.php"); ?>
 <?php include("header.php"); ?>
 
 <html>
@@ -28,30 +27,30 @@
                 <fieldset>
                     <legend>PAYMENT</legend>
 
-                    <label for="vchl_id">VEHICLE ID:</label>
-                    <input type="text" name="vchl_id" id="vchl_id" placeholder="Vehicle ID"><br><br>
+                    <label for="Vehicle_Id">VEHICLE ID:</label>
+                    <input type="text" name="Vehicle_Id" id="Vehicle_Id" placeholder="Vehicle ID" required><br><br>
 
-                    <label for="purch_qunt">PURCHASE QUANTITY:</label>
-                    <input type="number" name="purch_qunt" id="purch_qunt" placeholder="Quantity"><br><br>
+                    <label for="Purchase_Quantity">PURCHASE QUANTITY:</label>
+                    <input type="number" name="Purchase_Quantity" id="Purchase_Quantity" placeholder="Quantity"><br><br>
 
-                    <label for="vchl_nme">VEHICLE NAME:</label>
-                    <input type="text" name="vchl_nme" id="vchl_nme" placeholder="Vehicle NAME"><br><br>
+                    <label for="PurVehicle_Name">VEHICLE NAME:</label>
+                    <input type="text" name="PurVehicle_Name" id="PurVehicle_Name" placeholder="Vehicle NAME"><br><br>
 
-                    <label for="amt">TOTAL AMOUNT:</label>
-                    <input type="text" name="amt" id="amt" placeholder="Amount"><br><br>
+                    <label for="Purchase_Price">TOTAL AMOUNT:</label>
+                    <input type="text" name="Purchase_Price" id="Purchase_Price" placeholder="Purchase Price"><br><br>
 
                     <label for="paymode">Payment Mode:</label>
                     <select name="paymode" id="paymode">
                         <option value="-1">--SELECT PAYMENT MODE--</option>
                         <option value="Credit Card">Credit card</option>
                         <option value="Debit Card">Debit card</option>
-                        <option value="Paytm">Paytm</option>
+                        <option value="Paytm">PayTM</option>
                     </select><br><br>
 
-                    <label for="crd_num">CARD NO:</label>
-                    <input type="text" name="crd_num" id="crd_num" placeholder="Card Number"><br><br>
-                    <label for="addrs">ADDRESS:</label>
-                    <input type="text" name="addrs" id="addrs" placeholder="Address"><br><br>
+                    <label for="card_no">CARD NO:</label>
+                    <input type="text" name="card_no" id="card_no" placeholder="Card Number"><br><br>
+                    <label for="Delivery_Add">ADDRESS:</label>
+                    <input type="text" name="Delivery_Add" id="Delivery_Add" placeholder="Address"><br><br>
                     <input type="reset" value="Reset">
                     <input type="submit" value="Pay Now">
                     

@@ -1,17 +1,16 @@
 <?php
-    include("conn.php");
+    include("conn.php"); session_start();
     $userid=$_POST["userid"];
     $admin_id = "select * from admin where Login_ID='$userid'";
-    $qst_admin_id=$conn->query($admin_id);
+    $qst_admin_id = $conn->query($admin_id);
     if ($qst_admin_id->num_rows>0) {
-    $clct_admin_id=$qst_admin_id->fetch_assoc();
-    $admin_login_id=$clct_admin_id['Login_ID'];
-    $admin_pwd=$clct_admin_id['Admin_Pwd'];
-    $Admin_Name=$clct_admin_id['Admin_Name'];
+    $clct_admin_id = $qst_admin_id->fetch_assoc();
+    $admin_login_id = $clct_admin_id['Login_ID'];
+    $admin_pwd = $clct_admin_id['Admin_Pwd'];
+    $Admin_Name = $clct_admin_id['Admin_Name'];
     $_SESSION['admin_id'] = $admin_login_id;
     $_SESSION['admin_pw'] = $admin_pwd;
     $_SESSION['admin_name'] = $Admin_Name;
-    
 ?>
 <!DOCTYPE html>
 <html lang="en">

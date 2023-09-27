@@ -6,10 +6,14 @@
     $qst_cus_id=$conn->query($cus_id);
     if($qst_cus_id->num_rows>0) {
     $clct_cus_id=$qst_cus_id->fetch_assoc();
-    $cus_eml=$clct_cus_id['Email_ID'];
-    $ad_mb=$clct_cus_id['Cus_Pwd'];
-    $_SESSION['email'] = $cus_eml;
-    $_SESSION['c_id']=$ad_mb;
+    $Cus_id=$clct_cus_id['Cus_id'];
+    $Email_ID=$clct_cus_id['Email_ID'];
+    $Cus_Pwd=$clct_cus_id['Cus_Pwd'];
+    $Cus_Name=$clct_cus_id['Cus_Name'];
+    $_SESSION['Cus_id']=$Cus_id;
+    $_SESSION['cus_email'] = $Email_ID;
+    $_SESSION['cus_password']=$Cus_Pwd;
+    $_SESSION['cus_name']=$Cus_Name;
 ?>
 <DOCTYPE html>
     <head>
