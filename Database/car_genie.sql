@@ -32,9 +32,9 @@ CREATE TABLE `admin` (
 /*Data for the table `admin` */
 
 insert  into `admin`(`id`,`Login_ID`,`Admin_Name`,`Admin_Pwd`,`Admin_Phone`) values 
-(1,'amrhkr','Amar Choudhary','lovemerMORE!1230','9968853896'),
-(2,'amrhkr','Amar Choudhary','lovemerMORE!1230',''),
-(3,'we','we','we','');
+(1,'amrhkr','Amar Choudhary','lovemeMORE!1230','9968853896'),
+(2,'rkkaveri','Kritika Kaveri','rkkaveri#1234','8978948945'),
+(3,'rama','Rama Lakhna','rama@180','9785415240');
 
 /*Table structure for table `comments` */
 
@@ -91,7 +91,7 @@ CREATE TABLE `customer` (
 
 insert  into `customer`(`Cus_id`,`Cus_Name`,`Email_ID`,`Cus_Pwd`,`Cus_Sex`,`Cus_Add`,`Cus_City`,`Cus_State`,`Cus_Phone`) values 
 (1,'Amar Choudhary','Amar9t8@gmail.com','12334',NULL,'House No. J-60, Kartar Nagar, 3-1/2 Pusta Gali no. 1, Delhi-53','NEW DELHI','Delhi','+919968853896'),
-(2,'Amar Choudhary','amarhakerd@gmail.com','32432',NULL,'House No. J-60, Kartar Nagar, 3-1/2 Pusta Gali no. 1, Delhi-53','North East Delhi','DELHI','9968853896'),
+(2,'Prince','prince@gmail.com','32432',NULL,'House No. J-60, Kartar Nagar, 3-1/2 Pusta Gali no. 1, Delhi-53','North East Delhi','DELHI','9968853896'),
 (3,'Rahul Prasad','rahul@gmail.com','3982','Male','Test Address','Noida','Uttar Pradesh','99827386386'),
 (4,'Amar Choudhary','Amar9t8@gmail.com','123','Male','House No. J-60, Kartar Nagar, 3-1/2 Pusta Gali no. 1, Delhi-53','NEW DELHI','Delhi','+919968853896'),
 (5,'Rahul Yadav','rahul9t8@gmail.com','somthing!!','Male','House No. J-60, Kartar Nagar, 3-1/2 Pusta Gali no. 1, Delhi-53','NEW DELHI','Delhi','+919968853896'),
@@ -114,14 +114,15 @@ CREATE TABLE `feedback` (
   KEY `Cus_Id` (`Cus_Id`),
   KEY `Vehicle_Id` (`Vehicle_Id`),
   CONSTRAINT `feedback_ibfk_2` FOREIGN KEY (`Vehicle_Id`) REFERENCES `vehicle_info` (`Vehicle_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 /*Data for the table `feedback` */
 
 insert  into `feedback`(`Feed_ID`,`Cus_Id`,`Vehicle_Id`,`customer_name`,`Feed_Details`,`Feed_Response`,`Feed_Status`) values 
 (1,1,2,'Amar Choudhary','NICE WORK DONE.','KEEP IT UP.',NULL),
-(2,1,2,'Amar Choudhary','NICE WORK DONE.','KEEP IT UP.',NULL),
-(5,1,2,'Amar Choudhary','NICE WORK DONE.','WELL DONE',NULL);
+(2,2,2,'Prince','Greate','Looking good.',NULL),
+(5,4,4,'Vijay','I like the effeciency.','WELL DONE',NULL),
+(6,3,4,'Rahul Prasad','looks cute','keep up the good work.',NULL);
 
 /*Table structure for table `payment_info` */
 
@@ -148,8 +149,8 @@ CREATE TABLE `payment_info` (
 /*Data for the table `payment_info` */
 
 insert  into `payment_info`(`Purchase_ID`,`Cus_Id`,`Vehicle_Id`,`PurVehicle_Name`,`paymode`,`Purchase_Price`,`Purchase_Date`,`Purchase_Time`,`Purchase_Quantity`,`Delivery_Add`,`card_no`) values 
-(10,1,2,NULL,NULL,'2500000','2023-09-27','21:39:35',1,'Delhi','56416641651'),
-(11,1,2,NULL,NULL,'2500000','2023-09-27','21:40:36',1,'Delhi','56416641651');
+(10,1,2,'Lincon 40','Credit Card','2500000','2023-09-27','21:39:35',1,'Delhi','56416641651'),
+(11,1,4,'Mercedes V8','PAYTM','2500000','2023-09-14','21:40:36',1,'Delhi','56416641651');
 
 /*Table structure for table `vehicle_info` */
 

@@ -39,12 +39,12 @@
             </thead>
             <tbody>
                 <?php
-                    $admin_data = "SELECT * FROM `feedback` WHERE Feed_ID > 0";
-                    $result=$conn->query($admin_data);
+                    $feedback_data = "SELECT * FROM `feedback` WHERE Feed_ID > 0";
+                    $result=$conn->query($feedback_data);
                 ?>
                 <?php $counter=1;
                     while ($row = mysqli_fetch_array($result)){
-                        $adminData[] = array(
+                        $feedbackData[] = array(
                             'Cus_Id' =>$row['Cus_Id'],
                             'Vehicle_Id' => $row['Vehicle_Id'],
                             'Feed_Details' => $row['Feed_Details'],
@@ -53,25 +53,25 @@
                         );
                     }
                 ?>
-                <?php foreach ($adminData as $admin){ ?>
+                <?php foreach ($feedbackData as $feedback){ ?>
                 <tr class="datainfo">
                     <td class="admintablesrn">
                         <?php echo $counter++;?>
                     </td>
                     <td class="admintable">
-                        <?php echo $admin['Cus_Id']; ?>
+                        <?php echo $feedback['Cus_Id']; ?>
                     </td>
                     <td class="admintable">
-                        <?php echo $admin['Vehicle_Id']; ?>
+                        <?php echo $feedback['Vehicle_Id']; ?>
                     </td>
                     <td class="admintable">
-                        <?php echo $admin['customer_name']; ?>
+                        <?php echo $feedback['customer_name']; ?>
                     </td>
                     <td class="admintable">
-                        <?php echo $admin['Feed_Details']; ?>
+                        <?php echo $feedback['Feed_Details']; ?>
                     </td>
                     <td class="admintable">
-                        <?php echo $admin['Feed_Response']; ?>
+                        <?php echo $feedback['Feed_Response']; ?>
                     </td>
                 </tr>
                 <?php } ?>

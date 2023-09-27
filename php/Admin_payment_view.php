@@ -58,7 +58,7 @@
                             'Purchase_Time' => $row['Purchase_Time'],
                             'Purchase_Price' => $row['Purchase_Price'],
                             'PurVehicle_Name' => $row['PurVehicle_Name'],
-                            'Purchase_Quantity' => $row['Purchase_Quantity'],
+                            'Purchase_Quantity' => $row['Purchase_Quantity']
                         );
                     }
                 ?>
@@ -87,6 +87,9 @@
                     </td>
                     <td class="admintable">
                         <?php echo $payment['Purchase_Quantity']; ?>
+                    </td>
+                    <td class="admintable">
+                        <?php echo $payment['Delivery_Add']; ?>
                     </td>
                     <td class="admintable">
                         <?php echo $payment['card_no']; ?>
