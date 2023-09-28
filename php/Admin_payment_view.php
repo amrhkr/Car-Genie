@@ -1,3 +1,9 @@
+<!-- 
+    AUTHOR : AMAR CHOUDHARY
+    MOBILE : 9968853896
+    DATE : 28-07-2023
+    IGNOU ENROLLMENT : 2001293674
+-->
 <?php include 'admin_header.php'; ?>
 <?php 
     include('conn.php');
@@ -16,12 +22,9 @@
     <link rel="stylesheet" href="../css/home.css" type="text/css" />
     <script src="../jQuery/jqueryfile.js"></script>
 </head>
-
 <body class="hold-transition sidebar-mini">
-    
     <?php include 'admin_menu.php'; ?>
     <div class="admindetails">
-    
     <div class="container">
     <center>
         <h1 class="admintitle">PAYMENT DETAILS</h1>

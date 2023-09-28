@@ -1,3 +1,9 @@
+<!-- 
+    AUTHOR : AMAR CHOUDHARY
+    MOBILE : 9968853896
+    DATE : 28-07-2023
+    IGNOU ENROLLMENT : 2001293674
+-->
 <?php  include("conn.php");
     $Name=$_POST["Name"];
     $Email_ID=$_POST["Email_ID"];
@@ -13,8 +19,6 @@
 <script>
     var answer = confirm("Your Comment Noted Successfully..!");
     if (answer) {
-        // window.location = this;
-        // window.location.href = window.location;
         history.back();
         setTimeout(function() {
             location.reload();

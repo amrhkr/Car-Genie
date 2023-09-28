@@ -1,3 +1,9 @@
+<!-- 
+    AUTHOR : AMAR CHOUDHARY
+    MOBILE : 9968853896
+    DATE : 28-07-2023
+    IGNOU ENROLLMENT : 2001293674
+-->
 <?php include("header.php"); ?>
 <!DOCTYPE html>
 <html>
@@ -14,32 +20,25 @@
         });
     </script>
 </head>
-
 <body>
-    <!-- <div id="includeHeader"></div> -->
-    <!-- <div id="commonMenu"></div> -->
     <?php include 'menu.php'; ?>
     <center>
         <div class="frame1 center">
             <form action="fed_bck_sts.php" method="post" class="feedback-form">
                 <fieldset>
                     <legend>FEED BACK</legend>
-        
                     <div class="form-group">
                         <label for="customer_name">Name:</label>
                         <input type="text" name="customer_name" id="customer_name" placeholder="Enter Your Name..." required value="<?php echo $_SESSION['cus_name']; ?>">
                     </div>
-        
                     <div class="form-group">
                         <label for="Vehicle_Id">Vehicle ID:</label>
                         <input type="text" name="Vehicle_Id" id="Vehicle_Id" placeholder="Enter Vehile Id...">
                     </div>
-        
                     <div class="form-group">
                         <label for="Feed_Details">Feed Details:</label>
                         <input type="text" name="Feed_Details" id="Feed_Details" placeholder="Enter Details..." required>
                     </div>
-        
                     <div class="form-group">
                         <label for="Feed_Response">Response:</label>
                         <input type="text" name="Feed_Response" placeholder="Enter Your Response..." id="Feed_Response">
@@ -50,8 +49,6 @@
             </form>
         </div>
     </center>
-    
     <div id="includeFooter"></div>
 </body>
-
 </html>

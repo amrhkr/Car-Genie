@@ -1,8 +1,13 @@
-<?php  session_start(); 
+<!-- 
+    AUTHOR : AMAR CHOUDHARY
+    MOBILE : 9968853896
+    DATE : 28-07-2023
+    IGNOU ENROLLMENT : 2001293674
+-->
+<?php  
+    session_start(); 
     include("conn.php");
-    
 ?>
-
 <?php 
 if (isset($_FILES['Vehicle_image']) && $_FILES['Vehicle_image']['error'] === 0) {
     $imageData = file_get_contents($_FILES['Vehicle_image']['tmp_name']);
@@ -26,11 +31,6 @@ if (isset($_FILES['Vehicle_image']) && $_FILES['Vehicle_image']['error'] === 0) 
     echo "No file was uploaded or an error occurred during the upload.";
 }
 ?>
-
-
-
-
-
 <div class="modal-body">
     <p style="font-size:50px; font-weight:bold; color:#e70b3e; text-align:center;">YOUR FORM IS SUCESSFUL SUBMITTED</p>
     <center><img src="image/sussfull.png"></center>
@@ -42,7 +42,6 @@ if (isset($_FILES['Vehicle_image']) && $_FILES['Vehicle_image']['error'] === 0) 
             <center><a href="admin_cars_add.php" class="btn btn-primary"
             style="width: 100%;  height: 100px;font-weight: bold;font-size: 50px;" target="_blank">ADD MORE CARS</a></center>
 </div>
-
 
 <DOCTYPE html>
     <head>

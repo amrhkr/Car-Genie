@@ -1,3 +1,9 @@
+<!-- 
+    AUTHOR : AMAR CHOUDHARY
+    MOBILE : 9968853896
+    DATE : 28-07-2023
+    IGNOU ENROLLMENT : 2001293674
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,18 +18,16 @@
             <a href="admin_order.php">Order Details</a>
             <a href="admin_product.php">Add Cars</a>
             <a href="Admin_payment_view.php">View Payment</a>
-            <!-- <a href="Invoice.php">Invoice</a> -->
         </center>
     </div>
 </body>
 </html>
 
 <script>
-
     $(document).ready(function(){
         $('#CarCat').on('change', function() {
           var host = window.location.host;
           window.location =$(this).find(":selected").val()
-});
+        });
     })
 </script>

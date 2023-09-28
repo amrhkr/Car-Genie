@@ -1,22 +1,26 @@
+<!-- 
+    AUTHOR : AMAR CHOUDHARY
+    MOBILE : 9968853896
+    DATE : 28-07-2023
+    IGNOU ENROLLMENT : 2001293674
+-->
 <?php include("conn.php"); ?>
 <?php include("header.php"); ?>
 
 <html>
-
 <head>
     <title>CAR GENIE</title>
     <link rel="stylesheet" href="../css/home.css" type="text/css" />
     <script src="../jQuery/jqueryfile.js"></script>
-        <script>
-            $( document ).ready(function() {
-                $("#includeHeader").load("../html/header.html");
-                $("#includeFooter").load("../html/footer.html");
-                $("#commonMenu").load("../html/menu.html");
-                console.log( "ready!" );
-            });
-        </script>
+    <script>
+        $( document ).ready(function() {
+            $("#includeHeader").load("../html/header.html");
+            $("#includeFooter").load("../html/footer.html");
+            $("#commonMenu").load("../html/menu.html");
+            console.log( "ready!" );
+        });
+    </script>
 </head>
-
 <body>
     <div id="includeHeader"></div>
     <div id="commonMenu"></div>
@@ -46,19 +50,16 @@
                         <option value="Debit Card">Debit card</option>
                         <option value="Paytm">PayTM</option>
                     </select><br><br>
-
                     <label for="card_no">CARD NO:</label>
                     <input type="text" name="card_no" id="card_no" placeholder="Card Number"><br><br>
                     <label for="Delivery_Add">ADDRESS:</label>
                     <input type="text" name="Delivery_Add" id="Delivery_Add" placeholder="Address"><br><br>
                     <input type="reset" value="Reset">
                     <input type="submit" value="Pay Now">
-                    
                 </fieldset>
             </form>
     </div>
     </center>
     <div id="includeFooter"></div>
 </body>
-
 </html>

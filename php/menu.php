@@ -1,3 +1,9 @@
+<!-- 
+    AUTHOR : AMAR CHOUDHARY
+    MOBILE : 9968853896
+    DATE : 28-07-2023
+    IGNOU ENROLLMENT : 2001293674
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,13 +36,11 @@
     </div>
 </body>
 </html>
-
 <script>
-
     $(document).ready(function(){
         $('#CarCat').on('change', function() {
           var host = window.location.host;
           window.location =$(this).find(":selected").val()
-});
+        });
     })
 </script>

@@ -1,7 +1,12 @@
+<!-- 
+    AUTHOR : AMAR CHOUDHARY
+    MOBILE : 9968853896
+    DATE : 28-07-2023
+    IGNOU ENROLLMENT : 2001293674
+-->
 <?php include("header.php"); ?>
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>CAR GENIE- Contact</title>
     <link rel="stylesheet" href="../css/home.css" type="text/css" />
@@ -15,10 +20,8 @@
         });
     </script>
 </head>
-
 <body>
     <div id="includeHeader"></div>
-    <!-- <div id="commonMenu"></div> -->
     <?php include 'menu.php'; ?>
     <div class="frame center">
         <form id="contact" class="center-content">
@@ -26,8 +29,6 @@
             <h3>Name : Amar Choudhary<br><br>Phone No : 9968853896<br><br>Email Id : amar9t8@gmail.com<br><br>Address: Kartar Nagar, 3-1/2 Pusta, Delhi-110053</h3>
         </form>
     </div>
-    
     <div id="includeFooter"></div>
 </body>
-
 </html>

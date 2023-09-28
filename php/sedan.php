@@ -1,9 +1,13 @@
-<?php include("conn.php");
-?>
+<!-- 
+    AUTHOR : AMAR CHOUDHARY
+    MOBILE : 9968853896
+    DATE : 28-07-2023
+    IGNOU ENROLLMENT : 2001293674
+-->
+<?php include("conn.php"); ?>
 <?php require_once("header.php"); ?>
 
 <html>
-
 <head>
     <title>CAR GENIE</title>
     <link rel="stylesheet" href="../css/home.css" type="text/css" />
@@ -14,59 +18,11 @@
             $("#includeFooter").load("../html/footer.html");
             $("#commonMenu").load("../html/menu.html");
             console.log( "ready!" );
-            // When the user clicks the button, open the modal 
-            var btn = $("#mbtn");
-    btn.on('click', function() {
-        modal.show();
-    });
-    
-    // When the user clicks on <span> (x), close the modal
-    span.on('click', function() {
-        modal.fadeOut();
-    });
         });
-
-        //---------------------
-        // Get the modal
-var modal = $('#modalDialog');
-
-// Get the button that opens the modal
-
-
-// Get the <span> element that closes the modal
-var span = $(".close");
-
-// When the user clicks anywhere outside of the modal, close it
-$('body').bind('click', function(e){
-    if($(e.target).hasClass("modal")){
-        modal.fadeOut();
-    }
-});
-        //---------------------
-
     </script>
 </head>
 
 <body>
-    <div id="modalDialog" class="modal">
-        <div class="modal-content animate-top">
-            <div class="modal-header">
-                <h5 class="modal-title">Modal title</h5>
-                <button type="button" class="close">
-                    <span aria-hidden="true">x</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p>Woohoo, you're reading this text in a modal!</p>
-                <p>Modal body content goes here...</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary close">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-        </div>
-    </div>
-
     <div id="includeHeader"></div>
     <div id="commonMenu"></div>
     <?php require_once 'menu.php'; ?>
@@ -140,9 +96,6 @@ $('body').bind('click', function(e){
             </h3>
         </div>
     </div>
-    
-    
     <div id="includeFooter"></div>
 </body>
-
 </html>

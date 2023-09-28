@@ -1,5 +1,10 @@
-<?php include("conn.php");
-?>
+<!-- 
+    AUTHOR : AMAR CHOUDHARY
+    MOBILE : 9968853896
+    DATE : 28-07-2023
+    IGNOU ENROLLMENT : 2001293674
+-->
+<?php include("conn.php"); ?>
 <?php require_once("header.php"); ?>
 <html>
 
@@ -17,11 +22,6 @@
         $price  = $row['Vehicle_Price'];
         $description  = $row['Vehicle_Description'];
         $image  = base64_encode($row['Vehicle_image']);
-        
-        // Display the image (assuming the image is stored as binary data)
-        #echo '<td><img src="data:image/jpeg;base64,' .  . '" width="100"></td>';
-        
-    
 ?>
 <head>
     <title>CAR GENIE</title>
@@ -39,7 +39,6 @@
 
 <body><?php  ?>
     <div id="includeHeader"></div>
-    <!-- <div id="commonMenu"></div> -->
     <?php require_once 'menu.php'; ?>
     <?php 
         if($counter == 0){
@@ -64,5 +63,4 @@
     ?>
     <div id="includeFooter"></div>
 </body>
-
 </html>

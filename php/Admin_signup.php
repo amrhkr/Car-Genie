@@ -1,3 +1,9 @@
+<!-- 
+    AUTHOR : AMAR CHOUDHARY
+    MOBILE : 9968853896
+    DATE : 28-07-2023
+    IGNOU ENROLLMENT : 2001293674
+-->
 <?php include("header.php"); ?>
 <html>
 
@@ -37,7 +43,6 @@
                   <input type="text" id="mobile" name="mobile" placeholder="Mobile..."><br/>
                   <input type="reset" value="Reset">
                   <input type="submit" value="Signup">
-                  
                 </fieldset>
                 <h4>Already a Member? <a href="admin_login.php">Log In</a></h4>
             </form>
@@ -45,5 +50,4 @@
     </div>
     <div id="includeFooter"></div>
 </body>
-
 </html>

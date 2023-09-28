@@ -1,6 +1,11 @@
+<!-- 
+    AUTHOR : AMAR CHOUDHARY
+    MOBILE : 9968853896
+    DATE : 28-07-2023
+    IGNOU ENROLLMENT : 2001293674
+-->
 <?php include("header.php"); ?>
 <html>
-
 <head>
     <title>Admin Login</title>
     <link rel="stylesheet" href="../css/home.css" type="text/css" />
@@ -14,10 +19,8 @@
         });
     </script>
 </head>
-
 <body>
-    <div id="includeHeader"></div>   
-    <!-- <div id="commonMenu"></div> -->
+    <div id="includeHeader"></div>
     <?php include 'menu.php'; ?>
     <div class="frame2">
         <center>
@@ -26,17 +29,14 @@
                   <legend>ADMIN LOGIN</legend>
                   <label for="adminId">ADMIN ID:</label>
                   <input type="text" id="adminId" name="userid" placeholder="User Id..." required><br><br>
-
                   <label for="password">PASSWORD:</label>
                   <input type="password" id="password" name="password" placeholder="Password..." required><br><br>
                   <input type="reset" class="center-content" value="Reset">
                   <input type="submit" value="Log In">
-                  
                 </fieldset>
             </form>
         </center>
     </div>
     <div id="includeFooter"></div>
 </body>
-
 </html>

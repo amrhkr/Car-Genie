@@ -1,8 +1,12 @@
-<?php include("conn.php");
-?>
+<!-- 
+    AUTHOR : AMAR CHOUDHARY
+    MOBILE : 9968853896
+    DATE : 28-07-2023
+    IGNOU ENROLLMENT : 2001293674
+-->
+<?php include("conn.php"); ?>
 <?php require_once("header.php"); ?>
 <html>
-
 <head>
     <title>CAR GENIE</title>
     <link rel="stylesheet" href="../css/home.css" type="text/css" />
@@ -16,10 +20,8 @@
         });
     </script>
 </head>
-
 <body>
     <div id="includeHeader"></div>
-    <!-- <div id="commonMenu"></div> -->
     <?php require_once 'menu.php'; ?>
     <div class="product-item">
         <div class="item">
@@ -90,8 +92,6 @@
             </h3>
         </div>
     </div>
-    
     <div id="includeFooter"></div>
 </body>
-
 </html>

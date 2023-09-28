@@ -1,5 +1,9 @@
-<?php #include("header.php"); ?>
-
+<!-- 
+    AUTHOR : AMAR CHOUDHARY
+    MOBILE : 9968853896
+    DATE : 28-07-2023
+    IGNOU ENROLLMENT : 2001293674
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +13,6 @@
     <script src="../jQuery/jqueryfile.js"></script>
     <script>
         $( document ).ready(function() {
-            // $("#includeHeader").load("../html/header.html");
             $("#includeFooter").load("../html/footer.html");
             $("#commonMenu").load("../html/menu.html");
             console.log( "ready!" );
@@ -18,17 +21,14 @@
     <title>Please Login First</title>
 </head>
 <body>
-<!-- <h1><?php #print_r($_SESSION) ?></h1> -->
-    <!-- <div id="includeHeader"></div> -->
     <div id="commonMenu"></div>
     <?php include 'menu.php'; ?>
-
+    
     <div class="login center">
         <form id="contact" class="login-content">
             <h1><a href="login.php" title="Login Now">PLEASE LOGIN FIRST</a></h1>
         </form>
     </div>
-    
     <div id="includeFooter"></div>
 </body>
 </html>

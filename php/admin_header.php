@@ -1,3 +1,9 @@
+<!-- 
+    AUTHOR : AMAR CHOUDHARY
+    MOBILE : 9968853896
+    DATE : 28-07-2023
+    IGNOU ENROLLMENT : 2001293674
+-->
 <?php 
     include("conn.php"); session_start();
 ?>
@@ -24,9 +30,6 @@
     <div class="logo">
         <div class="left">
             <h1><a href="admin_home.php" title="Go To Home Page"><img src="../image/logo.jpg" width="40px" height="35px"><span id="projectName">CAR GENIE</span></a></h1>
-        </div>
-        <div class="right">
-            <!-- <p><img src="../image/phone.svg" width="16px" height="16px/"> <?php #echo $admin_name; ?> Console</p> -->
         </div>
     </div>
 </body>

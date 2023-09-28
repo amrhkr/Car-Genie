@@ -1,3 +1,9 @@
+<!-- 
+    AUTHOR : AMAR CHOUDHARY
+    MOBILE : 9968853896
+    DATE : 28-07-2023
+    IGNOU ENROLLMENT : 2001293674
+-->
 <?php include('conn.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,9 +16,7 @@
     <?php include 'header.php' ?>
     <?php include 'menu.php' ?>
 <div class="wrapper">
-        <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
-            <!-- Content Header (Page header) -->
             <section class="content-header">
                 <div class="header-icon">
                     <i class="fa fa-hospital-o"></i>

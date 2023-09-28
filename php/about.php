@@ -1,3 +1,9 @@
+<!-- 
+    AUTHOR : AMAR CHOUDHARY
+    MOBILE : 9968853896
+    DATE : 28-07-2023
+    IGNOU ENROLLMENT : 2001293674
+-->
 <?php include("header.php"); ?>
 <!DOCTYPE html>
 
@@ -17,10 +23,7 @@
     </head>
     <body>
         <div id="includeHeader"></div>
-
-        <!-- <div id="commonMenu"></div> -->
         <?php include 'menu.php'; ?>
-
         <center>
             <h1>WHATS'S POPULAR IN CARS</h1>
         </center>

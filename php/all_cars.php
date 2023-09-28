@@ -1,3 +1,9 @@
+<!-- 
+    AUTHOR : AMAR CHOUDHARY
+    MOBILE : 9968853896
+    DATE : 28-07-2023
+    IGNOU ENROLLMENT : 2001293674
+-->
 <html>
 <head>
     <title>CAR GENIE - All Cars</title>
@@ -5,9 +11,6 @@
     <script src="../jQuery/jqueryfile.js"></script>
     <script>
         $( document ).ready(function() {
-            // $("#includeHeader").load("../html/header.html");
-            // $("#includeFooter").load("../html/footer.html");
-            // $("#commonMenu").load("../html/menu.html");
             console.log( "ready!" );
             console.log(window.location.pathname.indexOf('campervan.php'));
             console.log(window.location.pathname);
@@ -17,7 +20,6 @@
         });
     </script>
 </head>
-
 <body>
     <?php include 'sport.php'; ?>
     <?php include 'super.php'; ?>
